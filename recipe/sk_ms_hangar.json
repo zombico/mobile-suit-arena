@@ -1,0 +1,830 @@
+{
+  "kind": "controllable",
+  "title": "mobile suit hangar - turntable + suit/livery/equip pickers",
+  "note": "MS hangar · suit stepper (g/z/toretto/taisa/diaz/geof) + livery picker (g: federal/union-green · z: zeonic-green/akai-comet · toretto: black-star/ground-type · taisa: akai-comet/zeonic-green · diaz: akai-comet/black-star · geof: geof-blue/ground-type) + equip picker · orbit by hand (no camera ⇒ OrbitControls) · idle stance · cosmetic loadouts (no combat HUD) · soundtrack: Hangar Vigil",
+  "worldFraming": {
+    "cameraPosition": [
+      61.2,
+      32.4,
+      22.8
+    ],
+    "lookAt": [
+      0,
+      0,
+      12.5
+    ],
+    "horizontalFov": 55
+  },
+  "ground": {
+    "size": 81.6,
+    "cell": 16.3,
+    "colorA": "#161b24",
+    "colorB": "#1e2632"
+  },
+  "figures": {
+    "g_federal": {
+      "unitRef": "sk_80str_v78_skirt_biped_multi",
+      "aim": {
+        "shR": {
+          "pitch": 68
+        },
+        "elbowR": 22,
+        "shL": {
+          "pitch": 32,
+          "yaw": -18
+        },
+        "elbowL": 60
+      },
+      "frame": true
+    },
+    "g_union": {
+      "unitRef": "sk_80str_v78_skirt_biped_multi_union_green",
+      "aim": {
+        "shR": {
+          "pitch": 68
+        },
+        "elbowR": 22,
+        "shL": {
+          "pitch": 32,
+          "yaw": -18
+        },
+        "elbowL": 60
+      },
+      "frame": true
+    },
+    "z_zeonic": {
+      "unitRef": "sk_zseries_a11_skirt_biped_multi_zeonic_green",
+      "aim": {
+        "shR": {
+          "pitch": 68
+        },
+        "elbowR": 22,
+        "shL": {
+          "pitch": 32,
+          "yaw": -18
+        },
+        "elbowL": 60
+      },
+      "targetH": 24
+    },
+    "z_akai": {
+      "unitRef": "sk_zseries_a11_skirt_biped_multi_akai_comet",
+      "aim": {
+        "shR": {
+          "pitch": 68
+        },
+        "elbowR": 22,
+        "shL": {
+          "pitch": 32,
+          "yaw": -18
+        },
+        "elbowL": 60
+      },
+      "targetH": 24
+    },
+    "t_black": {
+      "unitRef": "sk_toretto_unit_v1_multi",
+      "aim": {
+        "shR": {
+          "pitch": 68
+        },
+        "elbowR": 22,
+        "shL": {
+          "pitch": 32,
+          "yaw": -18
+        },
+        "elbowL": 60
+      },
+      "targetH": 24
+    },
+    "t_ground": {
+      "unitRef": "sk_toretto_unit_v1_multi_ground_type",
+      "aim": {
+        "shR": {
+          "pitch": 68
+        },
+        "elbowR": 22,
+        "shL": {
+          "pitch": 32,
+          "yaw": -18
+        },
+        "elbowL": 60
+      },
+      "targetH": 24
+    },
+    "taisa_akai": {
+      "unitRef": "sk_taisa_unit_v1_captain_multi",
+      "aim": {
+        "shR": {
+          "pitch": 68
+        },
+        "elbowR": 23,
+        "shL": {
+          "pitch": 22,
+          "yaw": 16
+        },
+        "elbowL": 88
+      },
+      "targetH": 24
+    },
+    "taisa_zeonic": {
+      "unitRef": "sk_taisa_unit_v1_captain_multi_zeonic_green",
+      "aim": {
+        "shR": {
+          "pitch": 68
+        },
+        "elbowR": 23,
+        "shL": {
+          "pitch": 22,
+          "yaw": 16
+        },
+        "elbowL": 88
+      },
+      "targetH": 24
+    },
+    "diaz_akai": {
+      "unitRef": "sk_diaz_unit_v1_multi",
+      "aim": {
+        "shR": {
+          "pitch": 13
+        },
+        "elbowR": 2,
+        "shL": {
+          "pitch": 13
+        },
+        "elbowL": 2
+      },
+      "targetH": 24
+    },
+    "diaz_black": {
+      "unitRef": "sk_diaz_unit_v1_multi_black_star",
+      "aim": {
+        "shR": {
+          "pitch": 13
+        },
+        "elbowR": 2,
+        "shL": {
+          "pitch": 13
+        },
+        "elbowL": 2
+      },
+      "targetH": 24
+    },
+    "geof_blue": {
+      "unitRef": "sk_geof_unit_v1_multi",
+      "aim": {
+        "shR": {
+          "pitch": 68
+        },
+        "elbowR": 22,
+        "shL": {
+          "pitch": 88,
+          "yaw": -4
+        },
+        "elbowL": 6
+      },
+      "aimArms": {
+        "L": "hold",
+        "R": {
+          "mode": "free",
+          "elbow": 20
+        }
+      },
+      "targetH": 24
+    },
+    "geof_ground": {
+      "unitRef": "sk_geof_unit_v1_multi_ground_type",
+      "aim": {
+        "shR": {
+          "pitch": 68
+        },
+        "elbowR": 22,
+        "shL": {
+          "pitch": 88,
+          "yaw": -4
+        },
+        "elbowL": 6
+      },
+      "aimArms": {
+        "L": "hold",
+        "R": {
+          "mode": "free",
+          "elbow": 20
+        }
+      },
+      "targetH": 24
+    }
+  },
+  "hangar": {
+    "suits": [
+      {
+        "name": "G-SERIES",
+        "liveries": [
+          {
+            "name": "FEDERAL",
+            "id": "disp_g_federal",
+            "color": "#e7dfcf"
+          },
+          {
+            "name": "UNION GREEN",
+            "id": "disp_g_union",
+            "color": "#a9c9c0"
+          }
+        ]
+      },
+      {
+        "name": "Z-SERIES",
+        "liveries": [
+          {
+            "name": "ZEONIC GREEN",
+            "id": "disp_z_zeonic",
+            "color": "#a8bb90"
+          },
+          {
+            "name": "AKAI COMET",
+            "id": "disp_z_akai",
+            "color": "#c05540"
+          }
+        ]
+      },
+      {
+        "name": "TORETTO",
+        "liveries": [
+          {
+            "name": "BLACK STAR",
+            "id": "disp_t_black",
+            "color": "#2a2630"
+          },
+          {
+            "name": "GROUND TYPE",
+            "id": "disp_t_ground",
+            "color": "#4a3628"
+          }
+        ]
+      },
+      {
+        "name": "TAISA",
+        "liveries": [
+          {
+            "name": "AKAI COMET",
+            "id": "disp_taisa_akai",
+            "color": "#c05540"
+          },
+          {
+            "name": "ZEONIC GREEN",
+            "id": "disp_taisa_zeonic",
+            "color": "#4c5155"
+          }
+        ]
+      },
+      {
+        "name": "DIAZ",
+        "liveries": [
+          {
+            "name": "AKAI COMET",
+            "id": "disp_diaz_akai",
+            "color": "#8a3323"
+          },
+          {
+            "name": "BLACK STAR",
+            "id": "disp_diaz_black",
+            "color": "#232228"
+          }
+        ]
+      },
+      {
+        "name": "GEOF",
+        "liveries": [
+          {
+            "name": "GEOF BLUE",
+            "id": "disp_geof_blue",
+            "color": "#5b7fb2"
+          },
+          {
+            "name": "GROUND TYPE",
+            "id": "disp_geof_ground",
+            "color": "#c2ab7d"
+          }
+        ]
+      }
+    ]
+  },
+  "entities": [
+    {
+      "id": "disp_g_federal",
+      "transform": {
+        "pos": [
+          0,
+          0,
+          0
+        ],
+        "heading": 0
+      },
+      "rule": {
+        "type": "static",
+        "loadout": [
+          {
+            "show": "rifle",
+            "name": "LONG RIFLE",
+            "icon": "rifle",
+            "figure": "g_federal"
+          },
+          {
+            "show": "saber",
+            "name": "BEAM SABER",
+            "icon": "saber",
+            "figure": "g_federal"
+          },
+          {
+            "show": "bazooka",
+            "name": "HYPER BAZOOKA",
+            "icon": "bazooka",
+            "figure": "g_federal"
+          },
+          {
+            "show": "none",
+            "name": "HEAD VULCAN",
+            "icon": "mg",
+            "restHand": true,
+            "figure": "g_federal"
+          }
+        ]
+      },
+      "body": {
+        "type": "figure-rig",
+        "figure": "g_federal"
+      }
+    },
+    {
+      "id": "disp_g_union",
+      "transform": {
+        "pos": [
+          0,
+          0,
+          0
+        ],
+        "heading": 0
+      },
+      "rule": {
+        "type": "static",
+        "loadout": [
+          {
+            "show": "rifle",
+            "name": "LONG RIFLE",
+            "icon": "rifle",
+            "figure": "g_union"
+          },
+          {
+            "show": "saber",
+            "name": "BEAM SABER",
+            "icon": "saber",
+            "figure": "g_union"
+          },
+          {
+            "show": "bazooka",
+            "name": "HYPER BAZOOKA",
+            "icon": "bazooka",
+            "figure": "g_union"
+          },
+          {
+            "show": "none",
+            "name": "HEAD VULCAN",
+            "icon": "mg",
+            "restHand": true,
+            "figure": "g_union"
+          }
+        ]
+      },
+      "body": {
+        "type": "figure-rig",
+        "figure": "g_union"
+      }
+    },
+    {
+      "id": "disp_z_zeonic",
+      "transform": {
+        "pos": [
+          0,
+          0,
+          0
+        ],
+        "heading": 0
+      },
+      "rule": {
+        "type": "static",
+        "loadout": [
+          {
+            "show": "mg",
+            "name": "MACHINE GUN",
+            "icon": "mg",
+            "figure": "z_zeonic"
+          },
+          {
+            "show": "axe",
+            "name": "HEAT AXE",
+            "icon": "axe",
+            "figure": "z_zeonic"
+          },
+          {
+            "show": "grenade",
+            "name": "GRENADE",
+            "icon": "grenade",
+            "figure": "z_zeonic"
+          },
+          {
+            "show": "bazooka",
+            "name": "BAZOOKA",
+            "icon": "bazooka",
+            "figure": "z_zeonic"
+          }
+        ]
+      },
+      "body": {
+        "type": "figure-rig",
+        "figure": "z_zeonic"
+      }
+    },
+    {
+      "id": "disp_z_akai",
+      "transform": {
+        "pos": [
+          0,
+          0,
+          0
+        ],
+        "heading": 0
+      },
+      "rule": {
+        "type": "static",
+        "loadout": [
+          {
+            "show": "mg",
+            "name": "MACHINE GUN",
+            "icon": "mg",
+            "figure": "z_akai"
+          },
+          {
+            "show": "axe",
+            "name": "HEAT AXE",
+            "icon": "axe",
+            "figure": "z_akai"
+          },
+          {
+            "show": "grenade",
+            "name": "GRENADE",
+            "icon": "grenade",
+            "figure": "z_akai"
+          },
+          {
+            "show": "bazooka",
+            "name": "BAZOOKA",
+            "icon": "bazooka",
+            "figure": "z_akai"
+          }
+        ]
+      },
+      "body": {
+        "type": "figure-rig",
+        "figure": "z_akai"
+      }
+    },
+    {
+      "id": "disp_t_black",
+      "transform": {
+        "pos": [
+          0,
+          0,
+          0
+        ],
+        "heading": 0
+      },
+      "rule": {
+        "type": "static",
+        "loadout": [
+          {
+            "show": "bazooka",
+            "name": "GIANT BAZOOKA",
+            "icon": "bazooka",
+            "figure": "t_black"
+          },
+          {
+            "show": "saber",
+            "name": "HEAT SABER",
+            "icon": "saber",
+            "figure": "t_black"
+          },
+          {
+            "show": "none",
+            "name": "TORSO BEAM",
+            "icon": "mg",
+            "restHand": true,
+            "figure": "t_black"
+          }
+        ]
+      },
+      "body": {
+        "type": "figure-rig",
+        "figure": "t_black"
+      }
+    },
+    {
+      "id": "disp_t_ground",
+      "transform": {
+        "pos": [
+          0,
+          0,
+          0
+        ],
+        "heading": 0
+      },
+      "rule": {
+        "type": "static",
+        "loadout": [
+          {
+            "show": "bazooka",
+            "name": "GIANT BAZOOKA",
+            "icon": "bazooka",
+            "figure": "t_ground"
+          },
+          {
+            "show": "saber",
+            "name": "HEAT SABER",
+            "icon": "saber",
+            "figure": "t_ground"
+          },
+          {
+            "show": "none",
+            "name": "TORSO BEAM",
+            "icon": "mg",
+            "restHand": true,
+            "figure": "t_ground"
+          }
+        ]
+      },
+      "body": {
+        "type": "figure-rig",
+        "figure": "t_ground"
+      }
+    },
+    {
+      "id": "disp_taisa_akai",
+      "transform": {
+        "pos": [
+          0,
+          0,
+          0
+        ],
+        "heading": 0
+      },
+      "rule": {
+        "type": "static",
+        "loadout": [
+          {
+            "show": [
+              "rifle",
+              "saber_stow"
+            ],
+            "name": "BEAM RIFLE",
+            "icon": "rifle",
+            "figure": "taisa_akai"
+          },
+          {
+            "show": "saber",
+            "name": "DOUBLE SABER",
+            "icon": "saber",
+            "figure": "taisa_akai"
+          },
+          {
+            "show": [
+              "none",
+              "saber_stow"
+            ],
+            "name": "WRIST GATLING",
+            "icon": "mg",
+            "figure": "taisa_akai"
+          }
+        ]
+      },
+      "body": {
+        "type": "figure-rig",
+        "figure": "taisa_akai"
+      }
+    },
+    {
+      "id": "disp_taisa_zeonic",
+      "transform": {
+        "pos": [
+          0,
+          0,
+          0
+        ],
+        "heading": 0
+      },
+      "rule": {
+        "type": "static",
+        "loadout": [
+          {
+            "show": [
+              "rifle",
+              "saber_stow"
+            ],
+            "name": "BEAM RIFLE",
+            "icon": "rifle",
+            "figure": "taisa_zeonic"
+          },
+          {
+            "show": "saber",
+            "name": "DOUBLE SABER",
+            "icon": "saber",
+            "figure": "taisa_zeonic"
+          },
+          {
+            "show": [
+              "none",
+              "saber_stow"
+            ],
+            "name": "WRIST GATLING",
+            "icon": "mg",
+            "figure": "taisa_zeonic"
+          }
+        ]
+      },
+      "body": {
+        "type": "figure-rig",
+        "figure": "taisa_zeonic"
+      }
+    },
+    {
+      "id": "disp_diaz_akai",
+      "transform": {
+        "pos": [
+          0,
+          0,
+          0
+        ],
+        "heading": 0
+      },
+      "rule": {
+        "type": "static",
+        "loadout": [
+          {
+            "show": "bazooka",
+            "name": "ANGULAR BAZOOKA",
+            "icon": "bazooka",
+            "figure": "diaz_akai"
+          },
+          {
+            "show": "saber",
+            "name": "BEAM SABER",
+            "icon": "saber",
+            "figure": "diaz_akai"
+          },
+          {
+            "show": [
+              "pistolR",
+              "pistolL"
+            ],
+            "name": "DUAL PISTOLS",
+            "icon": "mg",
+            "figure": "diaz_akai"
+          },
+          {
+            "show": "none",
+            "name": "HEAD VULCAN",
+            "icon": "mg",
+            "restHand": true,
+            "figure": "diaz_akai"
+          }
+        ]
+      },
+      "body": {
+        "type": "figure-rig",
+        "figure": "diaz_akai"
+      }
+    },
+    {
+      "id": "disp_diaz_black",
+      "transform": {
+        "pos": [
+          0,
+          0,
+          0
+        ],
+        "heading": 0
+      },
+      "rule": {
+        "type": "static",
+        "loadout": [
+          {
+            "show": "bazooka",
+            "name": "ANGULAR BAZOOKA",
+            "icon": "bazooka",
+            "figure": "diaz_black"
+          },
+          {
+            "show": "saber",
+            "name": "BEAM SABER",
+            "icon": "saber",
+            "figure": "diaz_black"
+          },
+          {
+            "show": [
+              "pistolR",
+              "pistolL"
+            ],
+            "name": "DUAL PISTOLS",
+            "icon": "mg",
+            "figure": "diaz_black"
+          },
+          {
+            "show": "none",
+            "name": "HEAD VULCAN",
+            "icon": "mg",
+            "restHand": true,
+            "figure": "diaz_black"
+          }
+        ]
+      },
+      "body": {
+        "type": "figure-rig",
+        "figure": "diaz_black"
+      }
+    },
+    {
+      "id": "disp_geof_blue",
+      "transform": {
+        "pos": [
+          0,
+          0,
+          0
+        ],
+        "heading": 0
+      },
+      "rule": {
+        "type": "static",
+        "loadout": [
+          {
+            "show": [
+              "none",
+              "broadsword_stow"
+            ],
+            "name": "FINGER VULCANS",
+            "icon": "mg",
+            "figure": "geof_blue"
+          },
+          {
+            "show": "broadsword",
+            "name": "HEAT SWORD",
+            "icon": "saber",
+            "figure": "geof_blue"
+          }
+        ]
+      },
+      "body": {
+        "type": "figure-rig",
+        "figure": "geof_blue"
+      }
+    },
+    {
+      "id": "disp_geof_ground",
+      "transform": {
+        "pos": [
+          0,
+          0,
+          0
+        ],
+        "heading": 0
+      },
+      "rule": {
+        "type": "static",
+        "loadout": [
+          {
+            "show": [
+              "none",
+              "broadsword_stow"
+            ],
+            "name": "FINGER VULCANS",
+            "icon": "mg",
+            "figure": "geof_ground"
+          },
+          {
+            "show": "broadsword",
+            "name": "HEAT SWORD",
+            "icon": "saber",
+            "figure": "geof_ground"
+          }
+        ]
+      },
+      "body": {
+        "type": "figure-rig",
+        "figure": "geof_ground"
+      }
+    }
+  ],
+  "audio": {
+    "soundtrack": {
+      "beatsRef": "sk_sawa34vuxd"
+    }
+  },
+  "backdrop": "/outcomes/sk_ms_arena/hangar-bay.png"
+}

@@ -1,0 +1,1092 @@
+{
+  "kind": "game",
+  "title": "Mobile Suit Arena",
+  "store": {
+    "slices": [
+      {
+        "name": "suits",
+        "kind": "party",
+        "init": {
+          "roster": {
+            "unit": {
+              "name": "G-SERIES V78"
+            },
+            "z_unit": {
+              "name": "Z-A11"
+            },
+            "t_unit": {
+              "name": "TORETTO"
+            },
+            "taisa_unit": {
+              "name": "TAISA"
+            },
+            "d_unit": {
+              "name": "DIAZ"
+            },
+            "geof_unit": {
+              "name": "GEOF"
+            },
+            "gframe_mk2_unit": {
+              "name": "GFRAME_MK2_UNIT"
+            }
+          }
+        }
+      },
+      {
+        "name": "duel_enemy",
+        "kind": "party",
+        "init": {
+          "roster": {
+            "en_unit": {
+              "name": "G-SERIES V78"
+            },
+            "en_z_unit": {
+              "name": "Z-A11"
+            },
+            "en_t_unit": {
+              "name": "TORETTO"
+            },
+            "en_taisa_unit": {
+              "name": "TAISA"
+            },
+            "en_d_unit": {
+              "name": "DIAZ"
+            },
+            "en_geof_unit": {
+              "name": "GEOF"
+            },
+            "en_gframe_mk2_unit": {
+              "name": "GFRAME_MK2_UNIT"
+            }
+          }
+        }
+      },
+      {
+        "name": "ffa_rivals",
+        "kind": "party",
+        "init": {
+          "roster": {
+            "opp_1": {
+              "name": "RIVAL 1"
+            },
+            "opp_2": {
+              "name": "RIVAL 2"
+            },
+            "opp_3": {
+              "name": "RIVAL 3"
+            },
+            "opp_4": {
+              "name": "RIVAL 4"
+            },
+            "opp_5": {
+              "name": "RIVAL 5"
+            }
+          }
+        }
+      },
+      {
+        "name": "team_allies",
+        "kind": "party",
+        "init": {
+          "roster": {
+            "al_unit": {
+              "name": "G-SERIES V78"
+            },
+            "al_z_unit": {
+              "name": "Z-A11"
+            },
+            "al_t_unit": {
+              "name": "TORETTO"
+            },
+            "al_taisa_unit": {
+              "name": "TAISA"
+            },
+            "al_d_unit": {
+              "name": "DIAZ"
+            },
+            "al_geof_unit": {
+              "name": "GEOF"
+            },
+            "al_gframe_mk2_unit": {
+              "name": "GFRAME_MK2_UNIT"
+            }
+          }
+        }
+      },
+      {
+        "name": "team_foes",
+        "kind": "party",
+        "init": {
+          "roster": {
+            "fo_unit": {
+              "name": "G-SERIES V78"
+            },
+            "fo_z_unit": {
+              "name": "Z-A11"
+            },
+            "fo_t_unit": {
+              "name": "TORETTO"
+            },
+            "fo_taisa_unit": {
+              "name": "TAISA"
+            },
+            "fo_d_unit": {
+              "name": "DIAZ"
+            },
+            "fo_geof_unit": {
+              "name": "GEOF"
+            },
+            "fo_gframe_mk2_unit": {
+              "name": "GFRAME_MK2_UNIT"
+            }
+          }
+        }
+      },
+      {
+        "name": "watch_a",
+        "kind": "party",
+        "init": {
+          "roster": {
+            "wa_unit": {
+              "name": "G-SERIES V78"
+            },
+            "wa_z_unit": {
+              "name": "Z-A11"
+            },
+            "wa_t_unit": {
+              "name": "TORETTO"
+            },
+            "wa_taisa_unit": {
+              "name": "TAISA"
+            },
+            "wa_d_unit": {
+              "name": "DIAZ"
+            },
+            "wa_geof_unit": {
+              "name": "GEOF"
+            },
+            "wa_gframe_mk2_unit": {
+              "name": "GFRAME_MK2_UNIT"
+            }
+          }
+        }
+      },
+      {
+        "name": "watch_b",
+        "kind": "party",
+        "init": {
+          "roster": {
+            "wb_z_unit": {
+              "name": "Z-A11"
+            },
+            "wb_t_unit": {
+              "name": "TORETTO"
+            },
+            "wb_taisa_unit": {
+              "name": "TAISA"
+            },
+            "wb_d_unit": {
+              "name": "DIAZ"
+            },
+            "wb_geof_unit": {
+              "name": "GEOF"
+            },
+            "wb_gframe_mk2_unit": {
+              "name": "GFRAME_MK2_UNIT"
+            },
+            "wb_unit": {
+              "name": "G-SERIES V78"
+            }
+          }
+        }
+      },
+      {
+        "name": "watch_blue",
+        "kind": "party",
+        "init": {
+          "roster": {
+            "bl_unit": {
+              "name": "G-SERIES V78"
+            },
+            "bl_z_unit": {
+              "name": "Z-A11"
+            },
+            "bl_t_unit": {
+              "name": "TORETTO"
+            },
+            "bl_taisa_unit": {
+              "name": "TAISA"
+            },
+            "bl_d_unit": {
+              "name": "DIAZ"
+            },
+            "bl_geof_unit": {
+              "name": "GEOF"
+            },
+            "bl_gframe_mk2_unit": {
+              "name": "GFRAME_MK2_UNIT"
+            }
+          }
+        }
+      },
+      {
+        "name": "watch_red",
+        "kind": "party",
+        "init": {
+          "roster": {
+            "rd_unit": {
+              "name": "G-SERIES V78"
+            },
+            "rd_z_unit": {
+              "name": "Z-A11"
+            },
+            "rd_t_unit": {
+              "name": "TORETTO"
+            },
+            "rd_taisa_unit": {
+              "name": "TAISA"
+            },
+            "rd_d_unit": {
+              "name": "DIAZ"
+            },
+            "rd_geof_unit": {
+              "name": "GEOF"
+            },
+            "rd_gframe_mk2_unit": {
+              "name": "GFRAME_MK2_UNIT"
+            }
+          }
+        }
+      },
+      {
+        "name": "watch_cast",
+        "kind": "party",
+        "init": {
+          "roster": {
+            "unit": {
+              "name": "G-SERIES V78"
+            },
+            "z_unit": {
+              "name": "Z-A11"
+            },
+            "t_unit": {
+              "name": "TORETTO"
+            },
+            "taisa_unit": {
+              "name": "TAISA"
+            },
+            "d_unit": {
+              "name": "DIAZ"
+            },
+            "geof_unit": {
+              "name": "GEOF"
+            },
+            "gframe_mk2_unit": {
+              "name": "GFRAME_MK2_UNIT"
+            }
+          }
+        }
+      },
+      {
+        "name": "career",
+        "kind": "progression"
+      }
+    ]
+  },
+  "levels": [
+    {
+      "title": "Solo Duel · Canyon",
+      "ref": "sk_ms_arena_solo_ground"
+    },
+    {
+      "title": "Solo Duel · City",
+      "ref": "sk_ms_arena_solo_city"
+    },
+    {
+      "title": "Solo Duel · Depot",
+      "ref": "sk_ms_arena_solo_hangar"
+    },
+    {
+      "title": "Solo Duel · Space",
+      "ref": "sk_ms_arena_solo_space"
+    },
+    {
+      "title": "Solo Duel · Colony",
+      "ref": "sk_ms_arena_solo_colony"
+    },
+    {
+      "title": "Practice · Canyon",
+      "ref": "sk_ms_arena_practice_ground"
+    },
+    {
+      "title": "Practice · City",
+      "ref": "sk_ms_arena_practice_city"
+    },
+    {
+      "title": "Practice · Depot",
+      "ref": "sk_ms_arena_practice_hangar"
+    },
+    {
+      "title": "Practice · Space",
+      "ref": "sk_ms_arena_practice_space"
+    },
+    {
+      "title": "Practice · Colony",
+      "ref": "sk_ms_arena_practice_colony"
+    },
+    {
+      "title": "Team Battle · Canyon",
+      "ref": "sk_ms_arena_team_ground"
+    },
+    {
+      "title": "Team Battle · City",
+      "ref": "sk_ms_arena_team_city"
+    },
+    {
+      "title": "Team Battle · Depot",
+      "ref": "sk_ms_arena_team_hangar"
+    },
+    {
+      "title": "Team Battle · Space",
+      "ref": "sk_ms_arena_team_space"
+    },
+    {
+      "title": "Team Battle · Colony",
+      "ref": "sk_ms_arena_team_colony"
+    },
+    {
+      "title": "Free for all · Canyon",
+      "ref": "sk_ms_arena_ffa_ground"
+    },
+    {
+      "title": "Free for all · City",
+      "ref": "sk_ms_arena_ffa_city"
+    },
+    {
+      "title": "Free for all · Depot",
+      "ref": "sk_ms_arena_ffa_hangar"
+    },
+    {
+      "title": "Free for all · Space",
+      "ref": "sk_ms_arena_ffa_space"
+    },
+    {
+      "title": "Free for all · Colony",
+      "ref": "sk_ms_arena_ffa_colony"
+    },
+    {
+      "title": "AI Spectate — Solo Duel · Canyon",
+      "ref": "sk_ms_arena_watch_solo_ground"
+    },
+    {
+      "title": "AI Spectate — Solo Duel · City",
+      "ref": "sk_ms_arena_watch_solo_city"
+    },
+    {
+      "title": "AI Spectate — Solo Duel · Depot",
+      "ref": "sk_ms_arena_watch_solo_hangar"
+    },
+    {
+      "title": "AI Spectate — Solo Duel · Space",
+      "ref": "sk_ms_arena_watch_solo_space"
+    },
+    {
+      "title": "AI Spectate — Solo Duel · Colony",
+      "ref": "sk_ms_arena_watch_solo_colony"
+    },
+    {
+      "title": "AI Spectate — Team Battle · Canyon",
+      "ref": "sk_ms_arena_watch_team_ground"
+    },
+    {
+      "title": "AI Spectate — Team Battle · City",
+      "ref": "sk_ms_arena_watch_team_city"
+    },
+    {
+      "title": "AI Spectate — Team Battle · Depot",
+      "ref": "sk_ms_arena_watch_team_hangar"
+    },
+    {
+      "title": "AI Spectate — Team Battle · Space",
+      "ref": "sk_ms_arena_watch_team_space"
+    },
+    {
+      "title": "AI Spectate — Team Battle · Colony",
+      "ref": "sk_ms_arena_watch_team_colony"
+    },
+    {
+      "title": "AI Spectate — Free for all · Canyon",
+      "ref": "sk_ms_arena_watch_ffa_ground"
+    },
+    {
+      "title": "AI Spectate — Free for all · City",
+      "ref": "sk_ms_arena_watch_ffa_city"
+    },
+    {
+      "title": "AI Spectate — Free for all · Depot",
+      "ref": "sk_ms_arena_watch_ffa_hangar"
+    },
+    {
+      "title": "AI Spectate — Free for all · Space",
+      "ref": "sk_ms_arena_watch_ffa_space"
+    },
+    {
+      "title": "AI Spectate — Free for all · Colony",
+      "ref": "sk_ms_arena_watch_ffa_colony"
+    }
+  ],
+  "menu": {
+    "tagline": "Pilot a mobile suit — or watch the machines fight.",
+    "art": "/outcomes/sk_ms_arena/menu-art.png",
+    "setupArt": "/outcomes/sk_ms_arena/hangar-bay.png",
+    "entries": [
+      {
+        "id": "single",
+        "title": "Single Player",
+        "subtitle": "Take the cockpit",
+        "kind": "menu",
+        "entries": [
+          {
+            "id": "sp_solo",
+            "title": "Solo Duel",
+            "subtitle": "1 v 1 — pick your suit and your enemy",
+            "kind": "mode",
+            "variants": [
+              {
+                "ref": "sk_ms_arena_solo_ground",
+                "label": "Canyon",
+                "shot": "/outcomes/sk_ms_arena/map-canyon.png"
+              },
+              {
+                "ref": "sk_ms_arena_solo_city",
+                "label": "City",
+                "shot": "/outcomes/sk_ms_arena/map-city.png"
+              },
+              {
+                "ref": "sk_ms_arena_solo_hangar",
+                "label": "Depot",
+                "shot": "/outcomes/sk_ms_arena/map-hangar.png"
+              },
+              {
+                "ref": "sk_ms_arena_solo_space",
+                "label": "Space",
+                "shot": "/outcomes/sk_ms_arena/map-space.png"
+              },
+              {
+                "ref": "sk_ms_arena_solo_colony",
+                "label": "Colony",
+                "shot": "/outcomes/sk_ms_arena/map-colony.png"
+              }
+            ]
+          },
+          {
+            "id": "sp_team",
+            "title": "Team Battle",
+            "subtitle": "pick your suit — allies and enemies at random",
+            "kind": "mode",
+            "variants": [
+              {
+                "ref": "sk_ms_arena_team_ground",
+                "label": "Canyon",
+                "shot": "/outcomes/sk_ms_arena/map-canyon.png"
+              },
+              {
+                "ref": "sk_ms_arena_team_city",
+                "label": "City",
+                "shot": "/outcomes/sk_ms_arena/map-city.png"
+              },
+              {
+                "ref": "sk_ms_arena_team_hangar",
+                "label": "Depot",
+                "shot": "/outcomes/sk_ms_arena/map-hangar.png"
+              },
+              {
+                "ref": "sk_ms_arena_team_space",
+                "label": "Space",
+                "shot": "/outcomes/sk_ms_arena/map-space.png"
+              },
+              {
+                "ref": "sk_ms_arena_team_colony",
+                "label": "Colony",
+                "shot": "/outcomes/sk_ms_arena/map-colony.png"
+              }
+            ]
+          },
+          {
+            "id": "sp_ffa",
+            "title": "Free for all",
+            "subtitle": "pick your suit — random enemies",
+            "kind": "mode",
+            "variants": [
+              {
+                "ref": "sk_ms_arena_ffa_ground",
+                "label": "Canyon",
+                "shot": "/outcomes/sk_ms_arena/map-canyon.png"
+              },
+              {
+                "ref": "sk_ms_arena_ffa_city",
+                "label": "City",
+                "shot": "/outcomes/sk_ms_arena/map-city.png"
+              },
+              {
+                "ref": "sk_ms_arena_ffa_hangar",
+                "label": "Depot",
+                "shot": "/outcomes/sk_ms_arena/map-hangar.png"
+              },
+              {
+                "ref": "sk_ms_arena_ffa_space",
+                "label": "Space",
+                "shot": "/outcomes/sk_ms_arena/map-space.png"
+              },
+              {
+                "ref": "sk_ms_arena_ffa_colony",
+                "label": "Colony",
+                "shot": "/outcomes/sk_ms_arena/map-colony.png"
+              }
+            ]
+          },
+          {
+            "id": "sp_practice",
+            "title": "Practice Mode",
+            "subtitle": "no destruction — drill your moves; the AI holds fire until you switch it on",
+            "kind": "mode",
+            "variants": [
+              {
+                "ref": "sk_ms_arena_practice_ground",
+                "label": "Canyon",
+                "shot": "/outcomes/sk_ms_arena/map-canyon.png"
+              },
+              {
+                "ref": "sk_ms_arena_practice_city",
+                "label": "City",
+                "shot": "/outcomes/sk_ms_arena/map-city.png"
+              },
+              {
+                "ref": "sk_ms_arena_practice_hangar",
+                "label": "Depot",
+                "shot": "/outcomes/sk_ms_arena/map-hangar.png"
+              },
+              {
+                "ref": "sk_ms_arena_practice_space",
+                "label": "Space",
+                "shot": "/outcomes/sk_ms_arena/map-space.png"
+              },
+              {
+                "ref": "sk_ms_arena_practice_colony",
+                "label": "Colony",
+                "shot": "/outcomes/sk_ms_arena/map-colony.png"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "spectate",
+        "title": "AI Spectate",
+        "subtitle": "Watch — WASD free-cam, Tab to switch fighters",
+        "kind": "menu",
+        "entries": [
+          {
+            "id": "sc_solo",
+            "title": "Solo Duel",
+            "subtitle": "watch a 1 v 1",
+            "kind": "mode",
+            "variants": [
+              {
+                "ref": "sk_ms_arena_watch_solo_ground",
+                "label": "Canyon",
+                "shot": "/outcomes/sk_ms_arena/map-canyon.png"
+              },
+              {
+                "ref": "sk_ms_arena_watch_solo_city",
+                "label": "City",
+                "shot": "/outcomes/sk_ms_arena/map-city.png"
+              },
+              {
+                "ref": "sk_ms_arena_watch_solo_hangar",
+                "label": "Depot",
+                "shot": "/outcomes/sk_ms_arena/map-hangar.png"
+              },
+              {
+                "ref": "sk_ms_arena_watch_solo_space",
+                "label": "Space",
+                "shot": "/outcomes/sk_ms_arena/map-space.png"
+              },
+              {
+                "ref": "sk_ms_arena_watch_solo_colony",
+                "label": "Colony",
+                "shot": "/outcomes/sk_ms_arena/map-colony.png"
+              }
+            ]
+          },
+          {
+            "id": "sc_team",
+            "title": "Team Battle",
+            "subtitle": "watch BLUE vs RED",
+            "kind": "mode",
+            "variants": [
+              {
+                "ref": "sk_ms_arena_watch_team_ground",
+                "label": "Canyon",
+                "shot": "/outcomes/sk_ms_arena/map-canyon.png"
+              },
+              {
+                "ref": "sk_ms_arena_watch_team_city",
+                "label": "City",
+                "shot": "/outcomes/sk_ms_arena/map-city.png"
+              },
+              {
+                "ref": "sk_ms_arena_watch_team_hangar",
+                "label": "Depot",
+                "shot": "/outcomes/sk_ms_arena/map-hangar.png"
+              },
+              {
+                "ref": "sk_ms_arena_watch_team_space",
+                "label": "Space",
+                "shot": "/outcomes/sk_ms_arena/map-space.png"
+              },
+              {
+                "ref": "sk_ms_arena_watch_team_colony",
+                "label": "Colony",
+                "shot": "/outcomes/sk_ms_arena/map-colony.png"
+              }
+            ]
+          },
+          {
+            "id": "sc_ffa",
+            "title": "Free for all",
+            "subtitle": "watch an all-AI free-for-all",
+            "kind": "mode",
+            "variants": [
+              {
+                "ref": "sk_ms_arena_watch_ffa_ground",
+                "label": "Canyon",
+                "shot": "/outcomes/sk_ms_arena/map-canyon.png"
+              },
+              {
+                "ref": "sk_ms_arena_watch_ffa_city",
+                "label": "City",
+                "shot": "/outcomes/sk_ms_arena/map-city.png"
+              },
+              {
+                "ref": "sk_ms_arena_watch_ffa_hangar",
+                "label": "Depot",
+                "shot": "/outcomes/sk_ms_arena/map-hangar.png"
+              },
+              {
+                "ref": "sk_ms_arena_watch_ffa_space",
+                "label": "Space",
+                "shot": "/outcomes/sk_ms_arena/map-space.png"
+              },
+              {
+                "ref": "sk_ms_arena_watch_ffa_colony",
+                "label": "Colony",
+                "shot": "/outcomes/sk_ms_arena/map-colony.png"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "hangar",
+        "title": "Hangar",
+        "subtitle": "Inspect the suits — turntable, liveries, weapons",
+        "kind": "world",
+        "ref": "sk_ms_hangar"
+      }
+    ]
+  },
+  "music": {
+    "menuVolume": 0.55,
+    "battleVolume": 0.35,
+    "menu": "sk_ms_menu_loop",
+    "battle": [
+      "sk_qh71f3s3th",
+      "sk_edsk7vhxxb",
+      "sk_qev9kzqz5e",
+      "sk_ernkpg7avf",
+      "sk_p7348t4kaa"
+    ]
+  },
+  "theme": {
+    "accent": "#5fe6d6",
+    "accent2": "#ff9d4d",
+    "style": "hud"
+  },
+  "setup": {
+    "suits": {
+      "style": "hangar",
+      "label": "select your machine",
+      "cards": {
+        "unit": {
+          "stats": {
+            "hull": 1000,
+            "shield": 100,
+            "boost armor": "lv 1",
+            "speed": "34 · boost 74",
+            "armament": "LONG RIFLE · BEAM SABER · HYPER BAZOOKA · HEAD VULCAN"
+          },
+          "portrait": "sk_ms_head_unit",
+          "preview": "sk_ms_preview_unit_federal",
+          "liveries": [
+            {
+              "id": "federal",
+              "hex": "#e7dfcf",
+              "preview": "sk_ms_preview_unit_federal"
+            },
+            {
+              "id": "union",
+              "hex": "#a9c9c0",
+              "preview": "sk_ms_preview_unit_union"
+            }
+          ],
+          "livery": "federal"
+        },
+        "z_unit": {
+          "stats": {
+            "hull": 700,
+            "boost armor": "lv 1",
+            "speed": "34 · boost 74",
+            "armament": "MACHINE GUN · HEAT AXE · GRENADE · BAZOOKA"
+          },
+          "portrait": "sk_ms_head_z_unit",
+          "preview": "sk_ms_preview_z_unit_zeonic",
+          "liveries": [
+            {
+              "id": "zeonic",
+              "hex": "#a8bb90",
+              "preview": "sk_ms_preview_z_unit_zeonic"
+            },
+            {
+              "id": "akai",
+              "hex": "#c05540",
+              "preview": "sk_ms_preview_z_unit_akai"
+            }
+          ],
+          "livery": "zeonic"
+        },
+        "t_unit": {
+          "stats": {
+            "hull": 800,
+            "boost armor": "lv 1",
+            "speed": "34 · boost 74",
+            "armament": "GIANT BAZOOKA · HEAT SABER · TORSO BEAM"
+          },
+          "portrait": "sk_ms_head_t_unit",
+          "preview": "sk_ms_preview_t_unit_black",
+          "liveries": [
+            {
+              "id": "black",
+              "hex": "#2a2630",
+              "preview": "sk_ms_preview_t_unit_black"
+            },
+            {
+              "id": "ground",
+              "hex": "#4a3628",
+              "preview": "sk_ms_preview_t_unit_ground"
+            }
+          ],
+          "livery": "black"
+        },
+        "taisa_unit": {
+          "stats": {
+            "hull": 850,
+            "shield": 100,
+            "boost armor": "lv 1",
+            "speed": "34 · boost 74",
+            "armament": "BEAM RIFLE · DOUBLE SABER · WRIST GATLING"
+          },
+          "portrait": "sk_ms_head_taisa_unit",
+          "preview": "sk_ms_preview_taisa_unit_akai",
+          "liveries": [
+            {
+              "id": "akai",
+              "hex": "#c05540",
+              "preview": "sk_ms_preview_taisa_unit_akai"
+            },
+            {
+              "id": "zeonic",
+              "hex": "#4c5155",
+              "preview": "sk_ms_preview_taisa_unit_zeonic"
+            }
+          ],
+          "livery": "akai"
+        },
+        "d_unit": {
+          "stats": {
+            "hull": 800,
+            "boost armor": "lv 1",
+            "speed": "34 · boost 74",
+            "armament": "ANGULAR BAZOOKA · BEAM SABER · DUAL PISTOLS · HEAD VULCAN"
+          },
+          "portrait": "sk_ms_head_d_unit",
+          "preview": "sk_ms_preview_d_unit_akai",
+          "liveries": [
+            {
+              "id": "akai",
+              "hex": "#8a3323",
+              "preview": "sk_ms_preview_d_unit_akai"
+            },
+            {
+              "id": "black",
+              "hex": "#232228",
+              "preview": "sk_ms_preview_d_unit_black"
+            }
+          ],
+          "livery": "akai"
+        },
+        "geof_unit": {
+          "stats": {
+            "hull": 750,
+            "boost armor": "lv 1",
+            "speed": "34 · boost 74",
+            "armament": "FINGER VULCANS · HEAT SWORD · HEAT ROD"
+          },
+          "portrait": "sk_ms_head_geof_unit",
+          "preview": "sk_ms_preview_geof_unit_blue",
+          "liveries": [
+            {
+              "id": "blue",
+              "hex": "#5b7fb2",
+              "preview": "sk_ms_preview_geof_unit_blue"
+            },
+            {
+              "id": "ground",
+              "hex": "#c2ab7d",
+              "preview": "sk_ms_preview_geof_unit_ground"
+            }
+          ],
+          "livery": "blue"
+        },
+        "gframe_mk2_unit": {
+          "stats": {
+            "hull": 1000,
+            "shield": 100,
+            "boost armor": "lv 1",
+            "speed": "34 · boost 74",
+            "armament": "V78 BEAM RIFLE · BEAM SABER · HEAD VULCAN"
+          },
+          "portrait": "sk_ms_head_gframe_mk2_unit",
+          "preview": "sk_ms_preview_gframe_mk2_unit"
+        }
+      }
+    },
+    "duel_enemy": {
+      "style": "count",
+      "fixed": 1,
+      "label": "the enemy",
+      "blurb": "Your opponent is drawn at random every sortie."
+    },
+    "ffa_rivals": {
+      "style": "count",
+      "label": "enemy suits — how many",
+      "blurb": "The rival lineup is drawn at random every sortie."
+    },
+    "team_allies": {
+      "style": "count",
+      "fixed": 2,
+      "label": "your wing (BLUE)",
+      "blurb": "2 wingmen, drawn at random every sortie."
+    },
+    "team_foes": {
+      "style": "count",
+      "fixed": 3,
+      "label": "the enemy team (RED)",
+      "blurb": "3 enemies, drawn at random every sortie."
+    },
+    "watch_a": {
+      "style": "hangar",
+      "label": "fighter A",
+      "cards": {
+        "wa_unit": {
+          "stats": {
+            "hull": 1000,
+            "shield": 100,
+            "boost armor": "lv 1",
+            "speed": "34 · boost 74",
+            "armament": "LONG RIFLE · BEAM SABER · HYPER BAZOOKA · HEAD VULCAN"
+          },
+          "portrait": "sk_ms_head_unit",
+          "preview": "sk_ms_preview_unit_federal"
+        },
+        "wa_z_unit": {
+          "stats": {
+            "hull": 700,
+            "boost armor": "lv 1",
+            "speed": "34 · boost 74",
+            "armament": "MACHINE GUN · HEAT AXE · GRENADE · BAZOOKA"
+          },
+          "portrait": "sk_ms_head_z_unit",
+          "preview": "sk_ms_preview_z_unit_zeonic"
+        },
+        "wa_t_unit": {
+          "stats": {
+            "hull": 800,
+            "boost armor": "lv 1",
+            "speed": "34 · boost 74",
+            "armament": "GIANT BAZOOKA · HEAT SABER · TORSO BEAM"
+          },
+          "portrait": "sk_ms_head_t_unit",
+          "preview": "sk_ms_preview_t_unit_black"
+        },
+        "wa_taisa_unit": {
+          "stats": {
+            "hull": 850,
+            "shield": 100,
+            "boost armor": "lv 1",
+            "speed": "34 · boost 74",
+            "armament": "BEAM RIFLE · DOUBLE SABER · WRIST GATLING"
+          },
+          "portrait": "sk_ms_head_taisa_unit",
+          "preview": "sk_ms_preview_taisa_unit_akai"
+        },
+        "wa_d_unit": {
+          "stats": {
+            "hull": 800,
+            "boost armor": "lv 1",
+            "speed": "34 · boost 74",
+            "armament": "ANGULAR BAZOOKA · BEAM SABER · DUAL PISTOLS · HEAD VULCAN"
+          },
+          "portrait": "sk_ms_head_d_unit",
+          "preview": "sk_ms_preview_d_unit_akai"
+        },
+        "wa_geof_unit": {
+          "stats": {
+            "hull": 750,
+            "boost armor": "lv 1",
+            "speed": "34 · boost 74",
+            "armament": "FINGER VULCANS · HEAT SWORD · HEAT ROD"
+          },
+          "portrait": "sk_ms_head_geof_unit",
+          "preview": "sk_ms_preview_geof_unit_blue"
+        },
+        "wa_gframe_mk2_unit": {
+          "stats": {
+            "hull": 1000,
+            "shield": 100,
+            "boost armor": "lv 1",
+            "speed": "34 · boost 74",
+            "armament": "V78 BEAM RIFLE · BEAM SABER · HEAD VULCAN"
+          },
+          "portrait": "sk_ms_head_gframe_mk2_unit",
+          "preview": "sk_ms_preview_gframe_mk2_unit"
+        }
+      }
+    },
+    "watch_b": {
+      "style": "hangar",
+      "label": "fighter B",
+      "cards": {
+        "wb_unit": {
+          "stats": {
+            "hull": 1000,
+            "shield": 100,
+            "boost armor": "lv 1",
+            "speed": "34 · boost 74",
+            "armament": "LONG RIFLE · BEAM SABER · HYPER BAZOOKA · HEAD VULCAN"
+          },
+          "portrait": "sk_ms_head_unit",
+          "preview": "sk_ms_preview_unit_federal"
+        },
+        "wb_z_unit": {
+          "stats": {
+            "hull": 700,
+            "boost armor": "lv 1",
+            "speed": "34 · boost 74",
+            "armament": "MACHINE GUN · HEAT AXE · GRENADE · BAZOOKA"
+          },
+          "portrait": "sk_ms_head_z_unit",
+          "preview": "sk_ms_preview_z_unit_zeonic"
+        },
+        "wb_t_unit": {
+          "stats": {
+            "hull": 800,
+            "boost armor": "lv 1",
+            "speed": "34 · boost 74",
+            "armament": "GIANT BAZOOKA · HEAT SABER · TORSO BEAM"
+          },
+          "portrait": "sk_ms_head_t_unit",
+          "preview": "sk_ms_preview_t_unit_black"
+        },
+        "wb_taisa_unit": {
+          "stats": {
+            "hull": 850,
+            "shield": 100,
+            "boost armor": "lv 1",
+            "speed": "34 · boost 74",
+            "armament": "BEAM RIFLE · DOUBLE SABER · WRIST GATLING"
+          },
+          "portrait": "sk_ms_head_taisa_unit",
+          "preview": "sk_ms_preview_taisa_unit_akai"
+        },
+        "wb_d_unit": {
+          "stats": {
+            "hull": 800,
+            "boost armor": "lv 1",
+            "speed": "34 · boost 74",
+            "armament": "ANGULAR BAZOOKA · BEAM SABER · DUAL PISTOLS · HEAD VULCAN"
+          },
+          "portrait": "sk_ms_head_d_unit",
+          "preview": "sk_ms_preview_d_unit_akai"
+        },
+        "wb_geof_unit": {
+          "stats": {
+            "hull": 750,
+            "boost armor": "lv 1",
+            "speed": "34 · boost 74",
+            "armament": "FINGER VULCANS · HEAT SWORD · HEAT ROD"
+          },
+          "portrait": "sk_ms_head_geof_unit",
+          "preview": "sk_ms_preview_geof_unit_blue"
+        },
+        "wb_gframe_mk2_unit": {
+          "stats": {
+            "hull": 1000,
+            "shield": 100,
+            "boost armor": "lv 1",
+            "speed": "34 · boost 74",
+            "armament": "V78 BEAM RIFLE · BEAM SABER · HEAD VULCAN"
+          },
+          "portrait": "sk_ms_head_gframe_mk2_unit",
+          "preview": "sk_ms_preview_gframe_mk2_unit"
+        }
+      }
+    },
+    "watch_blue": {
+      "style": "roster",
+      "label": "BLUE team — up to 3",
+      "blurb": "The default lineup fights if you leave a side unchecked."
+    },
+    "watch_red": {
+      "style": "roster",
+      "label": "RED team — up to 3",
+      "blurb": "The default lineup fights if you leave a side unchecked."
+    },
+    "watch_cast": {
+      "style": "roster",
+      "label": "the cast",
+      "blurb": "Uncheck a suit to bench it — everyone fights by default."
+    }
+  },
+  "difficulty": {
+    "default": "max",
+    "options": [
+      {
+        "id": "easy",
+        "name": "RECRUIT",
+        "sub": "easy — looser aim, slower trigger, no knockdowns"
+      },
+      {
+        "id": "medium",
+        "name": "ACE",
+        "sub": "medium — sharper and pushier"
+      },
+      {
+        "id": "max",
+        "name": "NEWTYPE",
+        "sub": "hard — the unrestrained machine"
+      }
+    ]
+  },
+  "contractVersion": 1
+}
