@@ -178776,7 +178776,7 @@
                 "r": 6.7,
                 "u": 16.8
               },
-              "fxColor": 16732120,
+              "fxColor": 5111664,
               "fxScale": 13.2,
               "reticleDist": 192,
               "sfx": {
@@ -178894,7 +178894,8 @@
                     "vol": 0.44
                   }
                 ]
-              }
+              },
+              "chargedDamage": 42
             }
           },
           {
@@ -178971,7 +178972,7 @@
           "hp": 100,
           "arc": 120
         },
-        "hp": 850,
+        "hp": 1000,
         "poise": 100,
         "poiseRegen": 22,
         "staggerDur": 1.35,
@@ -179351,8 +179352,7 @@
             "figure": "geof_multi",
             "show": [
               "none",
-              "broadsword_stow",
-              "heatrod_stow"
+              "broadsword_stow"
             ],
             "name": "FINGER VULCANS",
             "icon": "mg",
@@ -179381,8 +179381,7 @@
           {
             "figure": "geof_multi",
             "show": [
-              "broadsword",
-              "heatrod_stow"
+              "broadsword"
             ],
             "name": "HEAT SWORD",
             "icon": "saber",
@@ -179396,7 +179395,7 @@
           {
             "figure": "geof_multi",
             "show": [
-              "heatrod",
+              "none",
               "broadsword_stow"
             ],
             "name": "HEAT ROD",
@@ -179405,26 +179404,9 @@
             "strikeCooldown": 2,
             "strikeReach": 26.4,
             "strikeDamage": 45,
-            "strikeCone": 70,
+            "strikeCone": 75,
             "combo": 1,
-            "swingSet": "whip",
-            "strikeContact": [
-              0.36,
-              0.72
-            ],
-            "strikeShow": {
-              "default": "heatrod_lash",
-              "forward": "heatrod_dart"
-            },
             "strikeVerbs": {
-              "left": {
-                "strikeYaw": 85,
-                "strikeCone": 55
-              },
-              "right": {
-                "strikeYaw": -85,
-                "strikeCone": 55
-              },
               "forward": {
                 "strikeReach": 38.4,
                 "strikeCone": 14,
@@ -179435,10 +179417,11 @@
               },
               "back": {
                 "topple": true
-              },
-              "neutral": {
-                "topple": true
               }
+            },
+            "strikeShow": {
+              "default": "heatrod_lash",
+              "forward": "heatrod_dart"
             }
           }
         ]
@@ -179549,7 +179532,7 @@
                 "r": 6.7,
                 "u": 16.8
               },
-              "fxColor": 6742271,
+              "fxColor": 16736208,
               "fxScale": 13.2,
               "reticleDist": 192.1,
               "sfx": {
@@ -180810,7 +180793,7 @@
                 "r": 6.7,
                 "u": 16.8
               },
-              "fxColor": 16732120,
+              "fxColor": 5111664,
               "fxScale": 13.2,
               "reticleDist": 192,
               "sfx": {
@@ -180928,7 +180911,8 @@
                     "vol": 0.44
                   }
                 ]
-              }
+              },
+              "chargedDamage": 42
             }
           },
           {
@@ -181012,7 +180996,7 @@
           "hp": 100,
           "arc": 120
         },
-        "hp": 850,
+        "hp": 1000,
         "poise": 100,
         "poiseRegen": 22,
         "staggerDur": 1.35,
@@ -181317,8 +181301,7 @@
             "figure": "geof_multi",
             "show": [
               "none",
-              "broadsword_stow",
-              "heatrod_stow"
+              "broadsword_stow"
             ],
             "name": "FINGER VULCANS",
             "icon": "mg",
@@ -181347,8 +181330,7 @@
           {
             "figure": "geof_multi",
             "show": [
-              "broadsword",
-              "heatrod_stow"
+              "broadsword"
             ],
             "name": "HEAT SWORD",
             "icon": "saber",
@@ -181362,7 +181344,7 @@
           {
             "figure": "geof_multi",
             "show": [
-              "heatrod",
+              "none",
               "broadsword_stow"
             ],
             "name": "HEAT ROD",
@@ -181371,26 +181353,9 @@
             "strikeCooldown": 2,
             "strikeReach": 26.4,
             "strikeDamage": 45,
-            "strikeCone": 70,
+            "strikeCone": 75,
             "combo": 1,
-            "swingSet": "whip",
-            "strikeContact": [
-              0.36,
-              0.72
-            ],
-            "strikeShow": {
-              "default": "heatrod_lash",
-              "forward": "heatrod_dart"
-            },
             "strikeVerbs": {
-              "left": {
-                "strikeYaw": 85,
-                "strikeCone": 55
-              },
-              "right": {
-                "strikeYaw": -85,
-                "strikeCone": 55
-              },
               "forward": {
                 "strikeReach": 38.4,
                 "strikeCone": 14,
@@ -181401,10 +181366,11 @@
               },
               "back": {
                 "topple": true
-              },
-              "neutral": {
-                "topple": true
               }
+            },
+            "strikeShow": {
+              "default": "heatrod_lash",
+              "forward": "heatrod_dart"
             }
           }
         ],
@@ -181481,7 +181447,7 @@
                 "r": 6.7,
                 "u": 16.8
               },
-              "fxColor": 6742271,
+              "fxColor": 16736208,
               "fxScale": 13.2,
               "reticleDist": 192.1,
               "sfx": {
@@ -182747,7 +182713,7 @@
                 "r": 6.7,
                 "u": 16.8
               },
-              "fxColor": 16732120,
+              "fxColor": 5111664,
               "fxScale": 13.2,
               "reticleDist": 192,
               "sfx": {
@@ -182865,7 +182831,8 @@
                     "vol": 0.44
                   }
                 ]
-              }
+              },
+              "chargedDamage": 42
             }
           },
           {
@@ -182949,7 +182916,7 @@
           "hp": 100,
           "arc": 120
         },
-        "hp": 850,
+        "hp": 1000,
         "poise": 100,
         "poiseRegen": 22,
         "staggerDur": 1.35,
@@ -183254,8 +183221,7 @@
             "figure": "geof_multi",
             "show": [
               "none",
-              "broadsword_stow",
-              "heatrod_stow"
+              "broadsword_stow"
             ],
             "name": "FINGER VULCANS",
             "icon": "mg",
@@ -183284,8 +183250,7 @@
           {
             "figure": "geof_multi",
             "show": [
-              "broadsword",
-              "heatrod_stow"
+              "broadsword"
             ],
             "name": "HEAT SWORD",
             "icon": "saber",
@@ -183299,7 +183264,7 @@
           {
             "figure": "geof_multi",
             "show": [
-              "heatrod",
+              "none",
               "broadsword_stow"
             ],
             "name": "HEAT ROD",
@@ -183308,26 +183273,9 @@
             "strikeCooldown": 2,
             "strikeReach": 26.4,
             "strikeDamage": 45,
-            "strikeCone": 70,
+            "strikeCone": 75,
             "combo": 1,
-            "swingSet": "whip",
-            "strikeContact": [
-              0.36,
-              0.72
-            ],
-            "strikeShow": {
-              "default": "heatrod_lash",
-              "forward": "heatrod_dart"
-            },
             "strikeVerbs": {
-              "left": {
-                "strikeYaw": 85,
-                "strikeCone": 55
-              },
-              "right": {
-                "strikeYaw": -85,
-                "strikeCone": 55
-              },
               "forward": {
                 "strikeReach": 38.4,
                 "strikeCone": 14,
@@ -183338,10 +183286,11 @@
               },
               "back": {
                 "topple": true
-              },
-              "neutral": {
-                "topple": true
               }
+            },
+            "strikeShow": {
+              "default": "heatrod_lash",
+              "forward": "heatrod_dart"
             }
           }
         ],
@@ -183418,7 +183367,7 @@
                 "r": 6.7,
                 "u": 16.8
               },
-              "fxColor": 6742271,
+              "fxColor": 16736208,
               "fxScale": 13.2,
               "reticleDist": 192.1,
               "sfx": {

@@ -790,7 +790,7 @@
         },
         "taisa_unit": {
           "stats": {
-            "hull": 850,
+            "hull": 1000,
             "shield": 100,
             "boost armor": "lv 1",
             "speed": "34 · boost 74",
@@ -931,7 +931,7 @@
         },
         "wa_taisa_unit": {
           "stats": {
-            "hull": 850,
+            "hull": 1000,
             "shield": 100,
             "boost armor": "lv 1",
             "speed": "34 · boost 74",
@@ -1010,7 +1010,7 @@
         },
         "wb_taisa_unit": {
           "stats": {
-            "hull": 850,
+            "hull": 1000,
             "shield": 100,
             "boost armor": "lv 1",
             "speed": "34 · boost 74",
