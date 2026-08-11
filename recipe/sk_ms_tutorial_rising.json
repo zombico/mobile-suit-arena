@@ -1,0 +1,839 @@
+{
+  "kind": "controllable",
+  "mapRef": "sk_ms_fractal_city_arena",
+  "title": "Tutorial 1 — Mobile Suit Rising",
+  "entities": [
+    {
+      "id": "gframe_mk2_unit",
+      "transform": {
+        "pos": [
+          -300,
+          0,
+          0
+        ],
+        "heading": 0
+      },
+      "pilotable": true,
+      "ambient": {
+        "type": "ai",
+        "speed": 28.8,
+        "stride": 26.4,
+        "turn": 1.8,
+        "standoff": 120.1,
+        "fireArc": 5,
+        "burst": 1.2,
+        "pause": 1,
+        "dodgeDur": 0.6,
+        "dodgeSpeed": 86.5,
+        "dodgeTurns": 1
+      },
+      "rule": {
+        "type": "platform",
+        "turnMode": "look",
+        "speed": 33.6,
+        "stride": 26.4,
+        "boostSpeed": 74,
+        "jumpSpeed": 31.2,
+        "gravity": 40.8,
+        "fallGravity": 62.4,
+        "maxFall": 36,
+        "snap": 1.9,
+        "step": 8.4,
+        "chargeMax": 2,
+        "chargeDash": 40.8,
+        "kneel": true,
+        "dodge": true,
+        "dodgeDur": 0.6,
+        "dodgeSpeed": 86.5,
+        "dodgeTurns": 1,
+        "doubleTapWindow": 0.28,
+        "tackle": true,
+        "tackleDamage": 15,
+        "tackleReach": 12,
+        "boostMax": 9,
+        "boostHover": 0.5,
+        "loadout": [
+          {
+            "figure": "gframe_mk2_multi",
+            "show": "none",
+            "name": "HEAD VULCAN",
+            "icon": "mg",
+            "restHand": true,
+            "weapon": {
+              "fireClass": "area",
+              "auto": true,
+              "rof": 16,
+              "magazine": 60,
+              "reload": 2.2,
+              "coreAngle": 2,
+              "assistAngle": 2,
+              "range": 288.2,
+              "eye": 22.1,
+              "damage": 3,
+              "impact": 6,
+              "muzzleOffset": {
+                "f": 8.2,
+                "r": 1.4,
+                "u": 22.1
+              },
+              "fxColor": 16769162,
+              "fxScale": 2.9,
+              "reticleDist": 168.1
+            }
+          },
+          {
+            "figure": "gframe_mk2_multi",
+            "show": "saber",
+            "name": "BEAM SABER",
+            "icon": "saber",
+            "strike": "melee",
+            "strikeCooldown": 2,
+            "strikeReach": 22.8,
+            "strikeDamage": 60,
+            "strikeCone": 75,
+            "combo": 1
+          }
+        ],
+        "collideRadius": 7.2,
+        "collideHeight": 24
+      },
+      "body": {
+        "type": "figure-rig",
+        "figure": "gframe_mk2_multi",
+        "hittable": true,
+        "radius": 20.4,
+        "egg": {
+          "a": 5.3,
+          "c": 12
+        },
+        "hp": 1000,
+        "poise": 100,
+        "poiseRegen": 22,
+        "staggerDur": 1.35,
+        "getupDur": 3.9,
+        "wakeGuard": 5,
+        "boostArmor": 1
+      },
+      "seat": "player"
+    },
+    {
+      "id": "z_dummy",
+      "transform": {
+        "pos": [
+          140,
+          0,
+          0
+        ],
+        "heading": 3.141592653589793
+      },
+      "rule": {
+        "type": "patrol",
+        "speed": 16,
+        "stride": 26.4,
+        "turn": 1,
+        "waypoints": [
+          [
+            140,
+            0
+          ],
+          [
+            0,
+            140
+          ],
+          [
+            -140,
+            0
+          ],
+          [
+            0,
+            -140
+          ]
+        ],
+        "collideRadius": 7.2,
+        "collideHeight": 24
+      },
+      "body": {
+        "type": "figure-rig",
+        "figure": "z_multi__zeonic",
+        "hittable": true,
+        "radius": 20.4,
+        "egg": {
+          "a": 5.3,
+          "c": 12
+        },
+        "hp": 350,
+        "poise": 100,
+        "poiseRegen": 22,
+        "staggerDur": 1.35,
+        "getupDur": 3.9,
+        "wakeGuard": 5,
+        "boostArmor": 1
+      }
+    }
+  ],
+  "figures": {
+    "g_multi": {
+      "unitRef": "sk_80str_v78_skirt_biped_multi",
+      "frame": true,
+      "aim": {
+        "shR": {
+          "pitch": 68
+        },
+        "elbowR": 22,
+        "shL": {
+          "pitch": 32,
+          "yaw": -18
+        },
+        "elbowL": 60
+      },
+      "swings": [
+        "neutral",
+        "forward",
+        "left",
+        "right",
+        "back"
+      ],
+      "dodges": [
+        "dodge_roll",
+        "dodge_backflip",
+        "dodge_sideroll",
+        "dodge_spin",
+        "dodge_twirl",
+        "dodge_airtwirl"
+      ],
+      "contrast": true
+    },
+    "z_multi": {
+      "unitRef": "sk_zseries_a11_skirt_biped_multi",
+      "aim": {
+        "shR": {
+          "pitch": 68
+        },
+        "elbowR": 22,
+        "shL": {
+          "pitch": 32,
+          "yaw": -18
+        },
+        "elbowL": 60
+      },
+      "swings": [
+        "neutral",
+        "forward",
+        "left",
+        "right",
+        "back",
+        "throw"
+      ],
+      "targetH": 24,
+      "dodges": [
+        "dodge_roll",
+        "dodge_backflip",
+        "dodge_sideroll",
+        "dodge_spin",
+        "dodge_twirl",
+        "dodge_airtwirl"
+      ],
+      "contrast": true
+    },
+    "toretto_multi": {
+      "unitRef": "sk_toretto_unit_v1_multi",
+      "aim": {
+        "shR": {
+          "pitch": 68
+        },
+        "elbowR": 22,
+        "shL": {
+          "pitch": 32,
+          "yaw": -18
+        },
+        "elbowL": 60
+      },
+      "swings": [
+        {
+          "as": "neutral",
+          "from": "slash_up"
+        },
+        "left",
+        "right",
+        {
+          "as": "back",
+          "from": "cleave_2h"
+        }
+      ],
+      "targetH": 24,
+      "dodges": [
+        "dodge_twirl"
+      ],
+      "contrast": true
+    },
+    "taisa_multi": {
+      "unitRef": "sk_taisa_unit_v1_captain_multi",
+      "aim": {
+        "shR": {
+          "pitch": 68
+        },
+        "elbowR": 23,
+        "shL": {
+          "pitch": 22,
+          "yaw": 16
+        },
+        "elbowL": 88
+      },
+      "swings": [
+        {
+          "as": "neutral",
+          "from": "right"
+        },
+        "left",
+        "right",
+        {
+          "as": "back",
+          "from": "cleave_2h"
+        }
+      ],
+      "targetH": 24,
+      "dodges": [
+        "dodge_roll",
+        "dodge_backflip",
+        "dodge_sideroll",
+        "dodge_spin",
+        "dodge_twirl",
+        "dodge_airtwirl"
+      ],
+      "contrast": true
+    },
+    "diaz_multi": {
+      "unitRef": "sk_diaz_unit_v1_multi",
+      "aim": {
+        "shR": {
+          "pitch": 13
+        },
+        "elbowR": 2,
+        "shL": {
+          "pitch": 13
+        },
+        "elbowL": 2
+      },
+      "swings": [
+        {
+          "as": "neutral",
+          "from": "slash_up"
+        },
+        "left",
+        "right",
+        {
+          "as": "back",
+          "from": "cleave_2h"
+        }
+      ],
+      "targetH": 24,
+      "dodges": [
+        "dodge_twirl"
+      ],
+      "contrast": true
+    },
+    "geof_multi": {
+      "unitRef": "sk_geof_unit_v1_multi",
+      "aim": {
+        "shR": {
+          "pitch": 68
+        },
+        "elbowR": 22,
+        "shL": {
+          "pitch": 88,
+          "yaw": -4
+        },
+        "elbowL": 6
+      },
+      "swings": [
+        "neutral",
+        "forward",
+        "left",
+        "right",
+        "back",
+        {
+          "as": "left",
+          "from": "whip_left",
+          "set": "whip"
+        },
+        {
+          "as": "right",
+          "from": "whip_right",
+          "set": "whip"
+        },
+        {
+          "as": "forward",
+          "from": "whip_thrust",
+          "set": "whip"
+        },
+        {
+          "as": "back",
+          "from": "whip_down",
+          "set": "whip"
+        },
+        {
+          "as": "neutral",
+          "from": "whip_down",
+          "set": "whip"
+        }
+      ],
+      "targetH": 24,
+      "dodges": [
+        "dodge_roll",
+        "dodge_backflip",
+        "dodge_sideroll",
+        "dodge_spin",
+        "dodge_twirl",
+        "dodge_airtwirl"
+      ],
+      "aimArms": {
+        "L": "hold",
+        "R": {
+          "mode": "free",
+          "elbow": 20
+        }
+      },
+      "contrast": true
+    },
+    "gframe_mk2_multi": {
+      "unitRef": "sk_gframe_mk2_unit_v1_multi",
+      "aim": {
+        "shL": {
+          "pitch": 20,
+          "yaw": 5
+        },
+        "elbowL": 70,
+        "wristL": {
+          "roll": -72
+        },
+        "shR": {
+          "pitch": 12,
+          "yaw": -22
+        },
+        "elbowR": 90,
+        "wristR": {
+          "roll": 162
+        }
+      },
+      "swings": [
+        "neutral",
+        "forward",
+        "left",
+        "right",
+        "back"
+      ],
+      "targetH": 24,
+      "dodges": [
+        "dodge_roll",
+        "dodge_backflip",
+        "dodge_sideroll",
+        "dodge_spin",
+        "dodge_twirl",
+        "dodge_airtwirl"
+      ],
+      "contrast": true,
+      "aimArms": "lock"
+    },
+    "g_multi__union": {
+      "unitRef": "sk_80str_v78_skirt_biped_multi_union_green",
+      "frame": true,
+      "aim": {
+        "shR": {
+          "pitch": 68
+        },
+        "elbowR": 22,
+        "shL": {
+          "pitch": 32,
+          "yaw": -18
+        },
+        "elbowL": 60
+      },
+      "swings": [
+        "neutral",
+        "forward",
+        "left",
+        "right",
+        "back"
+      ],
+      "dodges": [
+        "dodge_roll",
+        "dodge_backflip",
+        "dodge_sideroll",
+        "dodge_spin",
+        "dodge_twirl",
+        "dodge_airtwirl"
+      ],
+      "contrast": true
+    },
+    "z_multi__zeonic": {
+      "unitRef": "sk_zseries_a11_skirt_biped_multi_zeonic_green",
+      "aim": {
+        "shR": {
+          "pitch": 68
+        },
+        "elbowR": 22,
+        "shL": {
+          "pitch": 32,
+          "yaw": -18
+        },
+        "elbowL": 60
+      },
+      "swings": [
+        "neutral",
+        "forward",
+        "left",
+        "right",
+        "back",
+        "throw"
+      ],
+      "targetH": 24,
+      "dodges": [
+        "dodge_roll",
+        "dodge_backflip",
+        "dodge_sideroll",
+        "dodge_spin",
+        "dodge_twirl",
+        "dodge_airtwirl"
+      ],
+      "contrast": true
+    },
+    "z_multi__akai": {
+      "unitRef": "sk_zseries_a11_skirt_biped_multi_akai_comet",
+      "aim": {
+        "shR": {
+          "pitch": 68
+        },
+        "elbowR": 22,
+        "shL": {
+          "pitch": 32,
+          "yaw": -18
+        },
+        "elbowL": 60
+      },
+      "swings": [
+        "neutral",
+        "forward",
+        "left",
+        "right",
+        "back",
+        "throw"
+      ],
+      "targetH": 24,
+      "dodges": [
+        "dodge_roll",
+        "dodge_backflip",
+        "dodge_sideroll",
+        "dodge_spin",
+        "dodge_twirl",
+        "dodge_airtwirl"
+      ],
+      "contrast": true
+    },
+    "toretto_multi__ground": {
+      "unitRef": "sk_toretto_unit_v1_multi_ground_type",
+      "aim": {
+        "shR": {
+          "pitch": 68
+        },
+        "elbowR": 22,
+        "shL": {
+          "pitch": 32,
+          "yaw": -18
+        },
+        "elbowL": 60
+      },
+      "swings": [
+        {
+          "as": "neutral",
+          "from": "slash_up"
+        },
+        "left",
+        "right",
+        {
+          "as": "back",
+          "from": "cleave_2h"
+        }
+      ],
+      "targetH": 24,
+      "dodges": [
+        "dodge_twirl"
+      ],
+      "contrast": true
+    },
+    "taisa_multi__zeonic": {
+      "unitRef": "sk_taisa_unit_v1_captain_multi_zeonic_green",
+      "aim": {
+        "shR": {
+          "pitch": 68
+        },
+        "elbowR": 23,
+        "shL": {
+          "pitch": 22,
+          "yaw": 16
+        },
+        "elbowL": 88
+      },
+      "swings": [
+        {
+          "as": "neutral",
+          "from": "right"
+        },
+        "left",
+        "right",
+        {
+          "as": "back",
+          "from": "cleave_2h"
+        }
+      ],
+      "targetH": 24,
+      "dodges": [
+        "dodge_roll",
+        "dodge_backflip",
+        "dodge_sideroll",
+        "dodge_spin",
+        "dodge_twirl",
+        "dodge_airtwirl"
+      ],
+      "contrast": true
+    },
+    "diaz_multi__black": {
+      "unitRef": "sk_diaz_unit_v1_multi_black_star",
+      "aim": {
+        "shR": {
+          "pitch": 13
+        },
+        "elbowR": 2,
+        "shL": {
+          "pitch": 13
+        },
+        "elbowL": 2
+      },
+      "swings": [
+        {
+          "as": "neutral",
+          "from": "slash_up"
+        },
+        "left",
+        "right",
+        {
+          "as": "back",
+          "from": "cleave_2h"
+        }
+      ],
+      "targetH": 24,
+      "dodges": [
+        "dodge_twirl"
+      ],
+      "contrast": true
+    },
+    "geof_multi__ground": {
+      "unitRef": "sk_geof_unit_v1_multi_ground_type",
+      "aim": {
+        "shR": {
+          "pitch": 68
+        },
+        "elbowR": 22,
+        "shL": {
+          "pitch": 88,
+          "yaw": -4
+        },
+        "elbowL": 6
+      },
+      "swings": [
+        "neutral",
+        "forward",
+        "left",
+        "right",
+        "back",
+        {
+          "as": "left",
+          "from": "whip_left",
+          "set": "whip"
+        },
+        {
+          "as": "right",
+          "from": "whip_right",
+          "set": "whip"
+        },
+        {
+          "as": "forward",
+          "from": "whip_thrust",
+          "set": "whip"
+        },
+        {
+          "as": "back",
+          "from": "whip_down",
+          "set": "whip"
+        },
+        {
+          "as": "neutral",
+          "from": "whip_down",
+          "set": "whip"
+        }
+      ],
+      "targetH": 24,
+      "dodges": [
+        "dodge_roll",
+        "dodge_backflip",
+        "dodge_sideroll",
+        "dodge_spin",
+        "dodge_twirl",
+        "dodge_airtwirl"
+      ],
+      "aimArms": {
+        "L": "hold",
+        "R": {
+          "mode": "free",
+          "elbow": 20
+        }
+      },
+      "contrast": true
+    }
+  },
+  "game": {
+    "levelRef": "sk_ms_tutorial_rising",
+    "consumes": [],
+    "produces": {
+      "results": [
+        "success",
+        "fail"
+      ],
+      "events": [
+        {
+          "type": "promote",
+          "slice": "career",
+          "max": 1
+        }
+      ]
+    },
+    "presets": {
+      "default": {}
+    }
+  },
+  "camera": {
+    "rule": "follow",
+    "target": "gframe_mk2_unit",
+    "turnMode": "look",
+    "dist": 34,
+    "height": 27.6,
+    "lead": 7.2,
+    "lookH": 17.3
+  },
+  "shadows": {
+    "cast": true
+  },
+  "pilot": "gframe_mk2_unit",
+  "smoke": true,
+  "wreckExplodes": true,
+  "tutorial": {
+    "steps": [
+      {
+        "id": "move",
+        "prompt": "MOVE OUT — W A S D",
+        "goal": {
+          "fact": "move",
+          "count": 90
+        }
+      },
+      {
+        "id": "boost",
+        "prompt": "BOOST — HOLD F",
+        "goal": {
+          "fact": "boost",
+          "count": 2.5
+        }
+      },
+      {
+        "id": "steer",
+        "prompt": "STEER MID-BOOST — HOLD F AND SWITCH DIRECTION (W / A / S / D)",
+        "goal": {
+          "fact": "boost-steer",
+          "count": 2
+        }
+      },
+      {
+        "id": "jump",
+        "prompt": "JUMP — HOLD SPACE, RELEASE TO LEAP",
+        "goal": {
+          "fact": "jump",
+          "count": 1
+        }
+      },
+      {
+        "id": "vulcan",
+        "prompt": "OPEN FIRE — LEFT CLICK: HIT THE Z-A11 WITH YOUR VULCANS",
+        "goal": {
+          "fact": "hit",
+          "of": "z_dummy",
+          "count": 6
+        }
+      },
+      {
+        "id": "clip",
+        "prompt": "KEEP FIRING — RUN THE CLIP DRY",
+        "goal": {
+          "fact": "clip-empty",
+          "count": 1
+        }
+      },
+      {
+        "id": "draw",
+        "prompt": "DRAW THE BEAM SABER — PRESS R",
+        "goal": {
+          "fact": "switch",
+          "slot": 1
+        }
+      },
+      {
+        "id": "cut-left",
+        "prompt": "CLOSE IN — SIDE CUT LEFT: HOLD A + CLICK",
+        "goal": {
+          "fact": "swing",
+          "dir": "left"
+        }
+      },
+      {
+        "id": "cut-right",
+        "prompt": "SIDE CUT RIGHT: HOLD D + CLICK",
+        "goal": {
+          "fact": "swing",
+          "dir": "right"
+        }
+      },
+      {
+        "id": "combo",
+        "prompt": "2-HIT COMBO — LAND A SWING, THEN CLICK A DIFFERENT DIRECTION IN THE GREEN WINDOW",
+        "goal": {
+          "fact": "combo",
+          "count": 1
+        }
+      },
+      {
+        "id": "downswing",
+        "prompt": "DOWNSWING — HOLD S + CLICK: THE KNOCKDOWN CLEAVE",
+        "goal": {
+          "fact": "swing",
+          "dir": "back"
+        }
+      },
+      {
+        "id": "tackle",
+        "prompt": "TACKLE — PRESS SHIFT: AN INVINCIBLE SHOULDER-CHARGE. IT DUMPS THE WHOLE THRUSTER",
+        "goal": {
+          "fact": "tackle",
+          "count": 1
+        }
+      },
+      {
+        "id": "finish",
+        "prompt": "FINISH IT — DESTROY THE Z-A11",
+        "goal": {
+          "fact": "destroy",
+          "of": "z_dummy"
+        }
+      }
+    ]
+  },
+  "ai": null,
+  "note": null
+}

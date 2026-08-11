@@ -433,6 +433,18 @@
     {
       "title": "AI Spectate — Free for all · Colony",
       "ref": "sk_ms_arena_watch_ffa_colony"
+    },
+    {
+      "title": "Tutorial 1 — Mobile Suit Rising",
+      "ref": "sk_ms_tutorial_rising"
+    },
+    {
+      "title": "Tutorial 2 — Canyon Rumble",
+      "ref": "sk_ms_tutorial_canyon"
+    },
+    {
+      "title": "Tutorial 3 — Encounters in Space",
+      "ref": "sk_ms_tutorial_space"
     }
   ],
   "menu": {
@@ -440,6 +452,53 @@
     "art": "/outcomes/sk_ms_arena/menu-art.png",
     "setupArt": "/outcomes/sk_ms_arena/hangar-bay.png",
     "entries": [
+      {
+        "id": "tutorial",
+        "title": "Tutorial",
+        "subtitle": "Learn your machine — two guided sorties",
+        "kind": "menu",
+        "entries": [
+          {
+            "id": "tut_rising",
+            "title": "1. Mobile Suit Rising",
+            "subtitle": "City — movement, boost, vulcans, the saber",
+            "kind": "mode",
+            "variants": [
+              {
+                "ref": "sk_ms_tutorial_rising",
+                "label": "City",
+                "shot": "/outcomes/sk_ms_arena/map-city.png"
+              }
+            ]
+          },
+          {
+            "id": "tut_canyon",
+            "title": "2. Canyon Rumble",
+            "subtitle": "Canyon — weapon switching, staggers, an ACE, then backup arrives",
+            "kind": "mode",
+            "variants": [
+              {
+                "ref": "sk_ms_tutorial_canyon",
+                "label": "Canyon",
+                "shot": "/outcomes/sk_ms_arena/map-canyon.png"
+              }
+            ]
+          },
+          {
+            "id": "tut_space",
+            "title": "3. Encounters in Space",
+            "subtitle": "Space — 6DoF thrust, the space roll, first contact",
+            "kind": "mode",
+            "variants": [
+              {
+                "ref": "sk_ms_tutorial_space",
+                "label": "Space",
+                "shot": "/outcomes/sk_ms_arena/map-space.png"
+              }
+            ]
+          }
+        ]
+      },
       {
         "id": "single",
         "title": "Single Player",
