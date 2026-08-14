@@ -221,10 +221,10 @@
               "projectileSpeed": 912.6,
               "projectileGravity": 14.4,
               "lobAngle": 0,
-              "splashRadius": 13,
+              "splashRadius": 20.4,
               "projRadius": 4.8,
-              "proximityRadius": 9.6,
-              "damage": 90,
+              "proximityRadius": 15.6,
+              "damage": 150,
               "eye": 16.8,
               "armTime": 0.05,
               "fuse": 3,
@@ -372,12 +372,30 @@
               "impact": 6,
               "muzzleOffset": {
                 "f": 8.2,
-                "r": 1.4,
+                "r": 2.4,
                 "u": 22.1
               },
+              "muzzleDual": true,
               "fxColor": 16769162,
               "fxScale": 2.9,
-              "reticleDist": 168.1
+              "reticleDist": 168.1,
+              "sfx": {
+                "shot": [
+                  {
+                    "type": "burst",
+                    "decay": 0.05,
+                    "vol": 0.24,
+                    "highpass": 800
+                  },
+                  {
+                    "type": "thump",
+                    "from": "A2",
+                    "to": "D1",
+                    "decay": 0.07,
+                    "vol": 0.28
+                  }
+                ]
+              }
             }
           }
         ],
@@ -407,16 +425,16 @@
       },
       "liveries": [
         {
-          "id": "federal",
+          "id": "tricolor",
           "name": "FEDERAL",
           "color": "#e7dfcf",
           "figure": "g_multi"
         },
         {
-          "id": "union",
-          "name": "UNION GREEN",
-          "color": "#a9c9c0",
-          "figure": "g_multi__union"
+          "id": "eff_ground",
+          "name": "EFF GROUND",
+          "color": "#6f7a52",
+          "figure": "g_multi__eff_ground"
         }
       ],
       "seat": "player",
@@ -473,7 +491,7 @@
         "boostHover": 0.5,
         "loadout": [
           {
-            "figure": "z_multi__zeonic",
+            "figure": "z_multi",
             "show": "mg",
             "name": "MACHINE GUN",
             "icon": "mg",
@@ -517,7 +535,7 @@
             }
           },
           {
-            "figure": "z_multi__zeonic",
+            "figure": "z_multi",
             "show": "axe",
             "name": "HEAT AXE",
             "icon": "axe",
@@ -528,7 +546,7 @@
             "strikeCone": 75
           },
           {
-            "figure": "z_multi__zeonic",
+            "figure": "z_multi",
             "show": "grenade",
             "name": "GRENADE",
             "icon": "grenade",
@@ -562,7 +580,7 @@
             "switchReady": 1.33
           },
           {
-            "figure": "z_multi__zeonic",
+            "figure": "z_multi",
             "show": "bazooka",
             "name": "BAZOOKA",
             "icon": "bazooka",
@@ -574,10 +592,10 @@
               "projectileSpeed": 912,
               "projectileGravity": 14.4,
               "lobAngle": 0,
-              "splashRadius": 13,
+              "splashRadius": 20.4,
               "projRadius": 4.8,
-              "proximityRadius": 9.6,
-              "damage": 90,
+              "proximityRadius": 15.6,
+              "damage": 150,
               "eye": 16.8,
               "armTime": 0.05,
               "fuse": 3,
@@ -711,7 +729,7 @@
       },
       "body": {
         "type": "figure-rig",
-        "figure": "z_multi__zeonic",
+        "figure": "z_multi",
         "hittable": true,
         "radius": 20.4,
         "egg": {
@@ -731,7 +749,7 @@
           "id": "zeonic",
           "name": "ZEONIC GREEN",
           "color": "#a8bb90",
-          "figure": "z_multi__zeonic"
+          "figure": "z_multi"
         },
         {
           "id": "akai",
@@ -806,10 +824,10 @@
               "projectileSpeed": 912,
               "projectileGravity": 14.4,
               "lobAngle": 0,
-              "splashRadius": 17.3,
+              "splashRadius": 24,
               "projRadius": 5.8,
-              "proximityRadius": 9.6,
-              "damage": 100,
+              "proximityRadius": 15.6,
+              "damage": 150,
               "eye": 16.8,
               "armTime": 0.05,
               "fuse": 3,
@@ -1089,6 +1107,7 @@
               "chargeTime": 1.5,
               "chargedImpact": 150,
               "chargedAmmoCost": 3,
+              "chargedDamage": 42,
               "muzzleOffset": {
                 "f": 13.2,
                 "r": 6.7,
@@ -1212,8 +1231,7 @@
                     "vol": 0.44
                   }
                 ]
-              },
-              "chargedDamage": 42
+              }
             }
           },
           {
@@ -1239,7 +1257,7 @@
             "weapon": {
               "fireClass": "area",
               "auto": true,
-              "rof": 14,
+              "rof": 16,
               "magazine": 48,
               "reload": 2.8,
               "coreAngle": 2,
@@ -1380,10 +1398,10 @@
               "projectileSpeed": 912,
               "projectileGravity": 14.4,
               "lobAngle": 0,
-              "splashRadius": 17.3,
+              "splashRadius": 24,
               "projRadius": 5.8,
-              "proximityRadius": 9.6,
-              "damage": 100,
+              "proximityRadius": 15.6,
+              "damage": 150,
               "eye": 16.8,
               "armTime": 0.05,
               "fuse": 3,
@@ -1574,12 +1592,30 @@
               "impact": 6,
               "muzzleOffset": {
                 "f": 8.2,
-                "r": 1.4,
+                "r": 2.4,
                 "u": 22.1
               },
+              "muzzleDual": true,
               "fxColor": 16769162,
               "fxScale": 2.9,
-              "reticleDist": 168.1
+              "reticleDist": 168.1,
+              "sfx": {
+                "shot": [
+                  {
+                    "type": "burst",
+                    "decay": 0.05,
+                    "vol": 0.24,
+                    "highpass": 800
+                  },
+                  {
+                    "type": "thump",
+                    "from": "A2",
+                    "to": "D1",
+                    "decay": 0.07,
+                    "vol": 0.28
+                  }
+                ]
+              }
             }
           }
         ],
@@ -1697,7 +1733,24 @@
               },
               "fxColor": 16769162,
               "fxScale": 2.9,
-              "reticleDist": 168
+              "reticleDist": 168,
+              "sfx": {
+                "shot": [
+                  {
+                    "type": "burst",
+                    "decay": 0.05,
+                    "vol": 0.24,
+                    "highpass": 800
+                  },
+                  {
+                    "type": "thump",
+                    "from": "A2",
+                    "to": "D1",
+                    "decay": 0.07,
+                    "vol": 0.28
+                  }
+                ]
+              }
             }
           },
           {
@@ -1728,6 +1781,10 @@
             "strikeDamage": 45,
             "strikeCone": 75,
             "combo": 1,
+            "strikeShow": {
+              "default": "heatrod_lash",
+              "forward": "heatrod_dart"
+            },
             "strikeVerbs": {
               "forward": {
                 "strikeReach": 38.4,
@@ -1740,10 +1797,6 @@
               "back": {
                 "topple": true
               }
-            },
-            "strikeShow": {
-              "default": "heatrod_lash",
-              "forward": "heatrod_dart"
             }
           }
         ],
@@ -2125,12 +2178,30 @@
               "impact": 6,
               "muzzleOffset": {
                 "f": 8.2,
-                "r": 1.4,
+                "r": 2.4,
                 "u": 22.1
               },
+              "muzzleDual": true,
               "fxColor": 16769162,
               "fxScale": 2.9,
-              "reticleDist": 168.1
+              "reticleDist": 168.1,
+              "sfx": {
+                "shot": [
+                  {
+                    "type": "burst",
+                    "decay": 0.05,
+                    "vol": 0.24,
+                    "highpass": 800
+                  },
+                  {
+                    "type": "thump",
+                    "from": "A2",
+                    "to": "D1",
+                    "decay": 0.07,
+                    "vol": 0.28
+                  }
+                ]
+              }
             }
           }
         ],
@@ -2158,6 +2229,14 @@
         "wakeGuard": 5,
         "boostArmor": 1
       },
+      "liveries": [
+        {
+          "id": "rx78",
+          "name": "RX-78",
+          "color": "#214f95",
+          "figure": "gframe_mk2_multi"
+        }
+      ],
       "seat": "player",
       "team": "a"
     },
@@ -2354,10 +2433,10 @@
               "projectileSpeed": 912.6,
               "projectileGravity": 14.4,
               "lobAngle": 0,
-              "splashRadius": 13,
+              "splashRadius": 20.4,
               "projRadius": 4.8,
-              "proximityRadius": 9.6,
-              "damage": 90,
+              "proximityRadius": 15.6,
+              "damage": 150,
               "eye": 16.8,
               "armTime": 0.05,
               "fuse": 3,
@@ -2505,12 +2584,30 @@
               "impact": 6,
               "muzzleOffset": {
                 "f": 8.2,
-                "r": 1.4,
+                "r": 2.4,
                 "u": 22.1
               },
+              "muzzleDual": true,
               "fxColor": 16769162,
               "fxScale": 2.9,
-              "reticleDist": 168.1
+              "reticleDist": 168.1,
+              "sfx": {
+                "shot": [
+                  {
+                    "type": "burst",
+                    "decay": 0.05,
+                    "vol": 0.24,
+                    "highpass": 800
+                  },
+                  {
+                    "type": "thump",
+                    "from": "A2",
+                    "to": "D1",
+                    "decay": 0.07,
+                    "vol": 0.28
+                  }
+                ]
+              }
             }
           }
         ],
@@ -2572,7 +2669,7 @@
         "dodgeTurns": 1,
         "loadout": [
           {
-            "figure": "z_multi__zeonic",
+            "figure": "z_multi",
             "show": "mg",
             "name": "MACHINE GUN",
             "icon": "mg",
@@ -2616,7 +2713,7 @@
             }
           },
           {
-            "figure": "z_multi__zeonic",
+            "figure": "z_multi",
             "show": "axe",
             "name": "HEAT AXE",
             "icon": "axe",
@@ -2627,7 +2724,7 @@
             "strikeCone": 75
           },
           {
-            "figure": "z_multi__zeonic",
+            "figure": "z_multi",
             "show": "grenade",
             "name": "GRENADE",
             "icon": "grenade",
@@ -2661,7 +2758,7 @@
             "switchReady": 1.33
           },
           {
-            "figure": "z_multi__zeonic",
+            "figure": "z_multi",
             "show": "bazooka",
             "name": "BAZOOKA",
             "icon": "bazooka",
@@ -2673,10 +2770,10 @@
               "projectileSpeed": 912,
               "projectileGravity": 14.4,
               "lobAngle": 0,
-              "splashRadius": 13,
+              "splashRadius": 20.4,
               "projRadius": 4.8,
-              "proximityRadius": 9.6,
-              "damage": 90,
+              "proximityRadius": 15.6,
+              "damage": 150,
               "eye": 16.8,
               "armTime": 0.05,
               "fuse": 3,
@@ -2817,7 +2914,7 @@
       },
       "body": {
         "type": "figure-rig",
-        "figure": "z_multi__zeonic",
+        "figure": "z_multi",
         "hittable": true,
         "radius": 20.4,
         "egg": {
@@ -2871,10 +2968,10 @@
               "projectileSpeed": 912,
               "projectileGravity": 14.4,
               "lobAngle": 0,
-              "splashRadius": 17.3,
+              "splashRadius": 24,
               "projRadius": 5.8,
-              "proximityRadius": 9.6,
-              "damage": 100,
+              "proximityRadius": 15.6,
+              "damage": 150,
               "eye": 16.8,
               "armTime": 0.05,
               "fuse": 3,
@@ -3120,6 +3217,7 @@
               "chargeTime": 1.5,
               "chargedImpact": 150,
               "chargedAmmoCost": 3,
+              "chargedDamage": 42,
               "muzzleOffset": {
                 "f": 13.2,
                 "r": 6.7,
@@ -3243,8 +3341,7 @@
                     "vol": 0.44
                   }
                 ]
-              },
-              "chargedDamage": 42
+              }
             }
           },
           {
@@ -3270,7 +3367,7 @@
             "weapon": {
               "fireClass": "area",
               "auto": true,
-              "rof": 14,
+              "rof": 16,
               "magazine": 48,
               "reload": 2.8,
               "coreAngle": 2,
@@ -3377,10 +3474,10 @@
               "projectileSpeed": 912,
               "projectileGravity": 14.4,
               "lobAngle": 0,
-              "splashRadius": 17.3,
+              "splashRadius": 24,
               "projRadius": 5.8,
-              "proximityRadius": 9.6,
-              "damage": 100,
+              "proximityRadius": 15.6,
+              "damage": 150,
               "eye": 16.8,
               "armTime": 0.05,
               "fuse": 3,
@@ -3571,12 +3668,30 @@
               "impact": 6,
               "muzzleOffset": {
                 "f": 8.2,
-                "r": 1.4,
+                "r": 2.4,
                 "u": 22.1
               },
+              "muzzleDual": true,
               "fxColor": 16769162,
               "fxScale": 2.9,
-              "reticleDist": 168.1
+              "reticleDist": 168.1,
+              "sfx": {
+                "shot": [
+                  {
+                    "type": "burst",
+                    "decay": 0.05,
+                    "vol": 0.24,
+                    "highpass": 800
+                  },
+                  {
+                    "type": "thump",
+                    "from": "A2",
+                    "to": "D1",
+                    "decay": 0.07,
+                    "vol": 0.28
+                  }
+                ]
+              }
             }
           }
         ],
@@ -3660,7 +3775,24 @@
               },
               "fxColor": 16769162,
               "fxScale": 2.9,
-              "reticleDist": 168
+              "reticleDist": 168,
+              "sfx": {
+                "shot": [
+                  {
+                    "type": "burst",
+                    "decay": 0.05,
+                    "vol": 0.24,
+                    "highpass": 800
+                  },
+                  {
+                    "type": "thump",
+                    "from": "A2",
+                    "to": "D1",
+                    "decay": 0.07,
+                    "vol": 0.28
+                  }
+                ]
+              }
             }
           },
           {
@@ -3691,6 +3823,10 @@
             "strikeDamage": 45,
             "strikeCone": 75,
             "combo": 1,
+            "strikeShow": {
+              "default": "heatrod_lash",
+              "forward": "heatrod_dart"
+            },
             "strikeVerbs": {
               "forward": {
                 "strikeReach": 38.4,
@@ -3703,10 +3839,6 @@
               "back": {
                 "topple": true
               }
-            },
-            "strikeShow": {
-              "default": "heatrod_lash",
-              "forward": "heatrod_dart"
             }
           }
         ],
@@ -4054,12 +4186,30 @@
               "impact": 6,
               "muzzleOffset": {
                 "f": 8.2,
-                "r": 1.4,
+                "r": 2.4,
                 "u": 22.1
               },
+              "muzzleDual": true,
               "fxColor": 16769162,
               "fxScale": 2.9,
-              "reticleDist": 168.1
+              "reticleDist": 168.1,
+              "sfx": {
+                "shot": [
+                  {
+                    "type": "burst",
+                    "decay": 0.05,
+                    "vol": 0.24,
+                    "highpass": 800
+                  },
+                  {
+                    "type": "thump",
+                    "from": "A2",
+                    "to": "D1",
+                    "decay": 0.07,
+                    "vol": 0.28
+                  }
+                ]
+              }
             }
           }
         ],
@@ -4288,10 +4438,10 @@
               "projectileSpeed": 912.6,
               "projectileGravity": 14.4,
               "lobAngle": 0,
-              "splashRadius": 13,
+              "splashRadius": 20.4,
               "projRadius": 4.8,
-              "proximityRadius": 9.6,
-              "damage": 90,
+              "proximityRadius": 15.6,
+              "damage": 150,
               "eye": 16.8,
               "armTime": 0.05,
               "fuse": 3,
@@ -4439,12 +4589,30 @@
               "impact": 6,
               "muzzleOffset": {
                 "f": 8.2,
-                "r": 1.4,
+                "r": 2.4,
                 "u": 22.1
               },
+              "muzzleDual": true,
               "fxColor": 16769162,
               "fxScale": 2.9,
-              "reticleDist": 168.1
+              "reticleDist": 168.1,
+              "sfx": {
+                "shot": [
+                  {
+                    "type": "burst",
+                    "decay": 0.05,
+                    "vol": 0.24,
+                    "highpass": 800
+                  },
+                  {
+                    "type": "thump",
+                    "from": "A2",
+                    "to": "D1",
+                    "decay": 0.07,
+                    "vol": 0.28
+                  }
+                ]
+              }
             }
           }
         ],
@@ -4506,7 +4674,7 @@
         "dodgeTurns": 1,
         "loadout": [
           {
-            "figure": "z_multi__zeonic",
+            "figure": "z_multi",
             "show": "mg",
             "name": "MACHINE GUN",
             "icon": "mg",
@@ -4550,7 +4718,7 @@
             }
           },
           {
-            "figure": "z_multi__zeonic",
+            "figure": "z_multi",
             "show": "axe",
             "name": "HEAT AXE",
             "icon": "axe",
@@ -4561,7 +4729,7 @@
             "strikeCone": 75
           },
           {
-            "figure": "z_multi__zeonic",
+            "figure": "z_multi",
             "show": "grenade",
             "name": "GRENADE",
             "icon": "grenade",
@@ -4595,7 +4763,7 @@
             "switchReady": 1.33
           },
           {
-            "figure": "z_multi__zeonic",
+            "figure": "z_multi",
             "show": "bazooka",
             "name": "BAZOOKA",
             "icon": "bazooka",
@@ -4607,10 +4775,10 @@
               "projectileSpeed": 912,
               "projectileGravity": 14.4,
               "lobAngle": 0,
-              "splashRadius": 13,
+              "splashRadius": 20.4,
               "projRadius": 4.8,
-              "proximityRadius": 9.6,
-              "damage": 90,
+              "proximityRadius": 15.6,
+              "damage": 150,
               "eye": 16.8,
               "armTime": 0.05,
               "fuse": 3,
@@ -4751,7 +4919,7 @@
       },
       "body": {
         "type": "figure-rig",
-        "figure": "z_multi__zeonic",
+        "figure": "z_multi",
         "hittable": true,
         "radius": 20.4,
         "egg": {
@@ -4805,10 +4973,10 @@
               "projectileSpeed": 912,
               "projectileGravity": 14.4,
               "lobAngle": 0,
-              "splashRadius": 17.3,
+              "splashRadius": 24,
               "projRadius": 5.8,
-              "proximityRadius": 9.6,
-              "damage": 100,
+              "proximityRadius": 15.6,
+              "damage": 150,
               "eye": 16.8,
               "armTime": 0.05,
               "fuse": 3,
@@ -5054,6 +5222,7 @@
               "chargeTime": 1.5,
               "chargedImpact": 150,
               "chargedAmmoCost": 3,
+              "chargedDamage": 42,
               "muzzleOffset": {
                 "f": 13.2,
                 "r": 6.7,
@@ -5177,8 +5346,7 @@
                     "vol": 0.44
                   }
                 ]
-              },
-              "chargedDamage": 42
+              }
             }
           },
           {
@@ -5204,7 +5372,7 @@
             "weapon": {
               "fireClass": "area",
               "auto": true,
-              "rof": 14,
+              "rof": 16,
               "magazine": 48,
               "reload": 2.8,
               "coreAngle": 2,
@@ -5311,10 +5479,10 @@
               "projectileSpeed": 912,
               "projectileGravity": 14.4,
               "lobAngle": 0,
-              "splashRadius": 17.3,
+              "splashRadius": 24,
               "projRadius": 5.8,
-              "proximityRadius": 9.6,
-              "damage": 100,
+              "proximityRadius": 15.6,
+              "damage": 150,
               "eye": 16.8,
               "armTime": 0.05,
               "fuse": 3,
@@ -5505,12 +5673,30 @@
               "impact": 6,
               "muzzleOffset": {
                 "f": 8.2,
-                "r": 1.4,
+                "r": 2.4,
                 "u": 22.1
               },
+              "muzzleDual": true,
               "fxColor": 16769162,
               "fxScale": 2.9,
-              "reticleDist": 168.1
+              "reticleDist": 168.1,
+              "sfx": {
+                "shot": [
+                  {
+                    "type": "burst",
+                    "decay": 0.05,
+                    "vol": 0.24,
+                    "highpass": 800
+                  },
+                  {
+                    "type": "thump",
+                    "from": "A2",
+                    "to": "D1",
+                    "decay": 0.07,
+                    "vol": 0.28
+                  }
+                ]
+              }
             }
           }
         ],
@@ -5594,7 +5780,24 @@
               },
               "fxColor": 16769162,
               "fxScale": 2.9,
-              "reticleDist": 168
+              "reticleDist": 168,
+              "sfx": {
+                "shot": [
+                  {
+                    "type": "burst",
+                    "decay": 0.05,
+                    "vol": 0.24,
+                    "highpass": 800
+                  },
+                  {
+                    "type": "thump",
+                    "from": "A2",
+                    "to": "D1",
+                    "decay": 0.07,
+                    "vol": 0.28
+                  }
+                ]
+              }
             }
           },
           {
@@ -5625,6 +5828,10 @@
             "strikeDamage": 45,
             "strikeCone": 75,
             "combo": 1,
+            "strikeShow": {
+              "default": "heatrod_lash",
+              "forward": "heatrod_dart"
+            },
             "strikeVerbs": {
               "forward": {
                 "strikeReach": 38.4,
@@ -5637,10 +5844,6 @@
               "back": {
                 "topple": true
               }
-            },
-            "strikeShow": {
-              "default": "heatrod_lash",
-              "forward": "heatrod_dart"
             }
           }
         ],
@@ -5988,12 +6191,30 @@
               "impact": 6,
               "muzzleOffset": {
                 "f": 8.2,
-                "r": 1.4,
+                "r": 2.4,
                 "u": 22.1
               },
+              "muzzleDual": true,
               "fxColor": 16769162,
               "fxScale": 2.9,
-              "reticleDist": 168.1
+              "reticleDist": 168.1,
+              "sfx": {
+                "shot": [
+                  {
+                    "type": "burst",
+                    "decay": 0.05,
+                    "vol": 0.24,
+                    "highpass": 800
+                  },
+                  {
+                    "type": "thump",
+                    "from": "A2",
+                    "to": "D1",
+                    "decay": 0.07,
+                    "vol": 0.28
+                  }
+                ]
+              }
             }
           }
         ],
@@ -6032,7 +6253,8 @@
   ],
   "figures": {
     "g_multi": {
-      "unitRef": "sk_80str_v78_skirt_biped_multi",
+      "unitRef": "sk_80str_v78_skirt_biped_armed",
+      "prelit": "sk_80str_v78_skirt_biped__prelit",
       "frame": true,
       "aim": {
         "shR": {
@@ -6059,11 +6281,11 @@
         "dodge_spin",
         "dodge_twirl",
         "dodge_airtwirl"
-      ],
-      "contrast": true
+      ]
     },
     "z_multi": {
-      "unitRef": "sk_zseries_a11_skirt_biped_multi",
+      "unitRef": "sk_zseries_a11_skirt_biped_armed",
+      "prelit": "sk_zseries_a11_skirt_biped_zeonic_green__prelit",
       "aim": {
         "shR": {
           "pitch": 68
@@ -6091,11 +6313,11 @@
         "dodge_spin",
         "dodge_twirl",
         "dodge_airtwirl"
-      ],
-      "contrast": true
+      ]
     },
     "toretto_multi": {
-      "unitRef": "sk_toretto_unit_v1_multi",
+      "unitRef": "sk_toretto_unit_v1_armed",
+      "prelit": "sk_toretto_unit_v1__prelit",
       "aim": {
         "shR": {
           "pitch": 68
@@ -6122,11 +6344,11 @@
       "targetH": 24,
       "dodges": [
         "dodge_twirl"
-      ],
-      "contrast": true
+      ]
     },
     "taisa_multi": {
       "unitRef": "sk_taisa_unit_v1_captain_multi",
+      "prelit": "sk_taisa_unit_v1_captain_multi__prelit",
       "aim": {
         "shR": {
           "pitch": 68
@@ -6158,11 +6380,11 @@
         "dodge_spin",
         "dodge_twirl",
         "dodge_airtwirl"
-      ],
-      "contrast": true
+      ]
     },
     "diaz_multi": {
-      "unitRef": "sk_diaz_unit_v1_multi",
+      "unitRef": "sk_diaz_unit_v1_armed",
+      "prelit": "sk_diaz_unit_v1__prelit",
       "aim": {
         "shR": {
           "pitch": 13
@@ -6188,11 +6410,11 @@
       "targetH": 24,
       "dodges": [
         "dodge_twirl"
-      ],
-      "contrast": true
+      ]
     },
     "geof_multi": {
       "unitRef": "sk_geof_unit_v1_multi",
+      "prelit": "sk_geof_unit_v1_multi__prelit",
       "aim": {
         "shR": {
           "pitch": 68
@@ -6251,11 +6473,11 @@
           "mode": "free",
           "elbow": 20
         }
-      },
-      "contrast": true
+      }
     },
     "gframe_mk2_multi": {
-      "unitRef": "sk_gframe_mk2_unit_v1_multi",
+      "unitRef": "sk_gframe_mk2_larmfix",
+      "prelit": "sk_gframe_mk2_larmfix__prelit",
       "aim": {
         "shL": {
           "pitch": 20,
@@ -6290,11 +6512,11 @@
         "dodge_twirl",
         "dodge_airtwirl"
       ],
-      "contrast": true,
       "aimArms": "lock"
     },
-    "g_multi__union": {
-      "unitRef": "sk_80str_v78_skirt_biped_multi_union_green",
+    "g_multi__eff_ground": {
+      "unitRef": "sk_80str_v78_skirt_biped_multi_eff_ground_s1",
+      "prelit": "sk_80str_v78_skirt_biped_multi_eff_ground_s1__prelit",
       "frame": true,
       "aim": {
         "shR": {
@@ -6321,43 +6543,11 @@
         "dodge_spin",
         "dodge_twirl",
         "dodge_airtwirl"
-      ],
-      "contrast": true
-    },
-    "z_multi__zeonic": {
-      "unitRef": "sk_zseries_a11_skirt_biped_multi_zeonic_green",
-      "aim": {
-        "shR": {
-          "pitch": 68
-        },
-        "elbowR": 22,
-        "shL": {
-          "pitch": 32,
-          "yaw": -18
-        },
-        "elbowL": 60
-      },
-      "swings": [
-        "neutral",
-        "forward",
-        "left",
-        "right",
-        "back",
-        "throw"
-      ],
-      "targetH": 24,
-      "dodges": [
-        "dodge_roll",
-        "dodge_backflip",
-        "dodge_sideroll",
-        "dodge_spin",
-        "dodge_twirl",
-        "dodge_airtwirl"
-      ],
-      "contrast": true
+      ]
     },
     "z_multi__akai": {
-      "unitRef": "sk_zseries_a11_skirt_biped_multi_akai_comet",
+      "unitRef": "sk_zseries_a11_skirt_biped_armed",
+      "prelit": "sk_zseries_a11_skirt_biped_akai_comet__prelit",
       "aim": {
         "shR": {
           "pitch": 68
@@ -6385,11 +6575,11 @@
         "dodge_spin",
         "dodge_twirl",
         "dodge_airtwirl"
-      ],
-      "contrast": true
+      ]
     },
     "toretto_multi__ground": {
       "unitRef": "sk_toretto_unit_v1_multi_ground_type",
+      "prelit": "sk_toretto_unit_v1_multi_ground_type__prelit",
       "aim": {
         "shR": {
           "pitch": 68
@@ -6416,11 +6606,11 @@
       "targetH": 24,
       "dodges": [
         "dodge_twirl"
-      ],
-      "contrast": true
+      ]
     },
     "taisa_multi__zeonic": {
       "unitRef": "sk_taisa_unit_v1_captain_multi_zeonic_green",
+      "prelit": "sk_taisa_unit_v1_captain_multi_zeonic_green__prelit",
       "aim": {
         "shR": {
           "pitch": 68
@@ -6452,11 +6642,11 @@
         "dodge_spin",
         "dodge_twirl",
         "dodge_airtwirl"
-      ],
-      "contrast": true
+      ]
     },
     "diaz_multi__black": {
       "unitRef": "sk_diaz_unit_v1_multi_black_star",
+      "prelit": "sk_diaz_unit_v1_multi_black_star__prelit",
       "aim": {
         "shR": {
           "pitch": 13
@@ -6482,11 +6672,11 @@
       "targetH": 24,
       "dodges": [
         "dodge_twirl"
-      ],
-      "contrast": true
+      ]
     },
     "geof_multi__ground": {
       "unitRef": "sk_geof_unit_v1_multi_ground_type",
+      "prelit": "sk_geof_unit_v1_multi_ground_type__prelit",
       "aim": {
         "shR": {
           "pitch": 68
@@ -6545,8 +6735,7 @@
           "mode": "free",
           "elbow": 20
         }
-      },
-      "contrast": true
+      }
     }
   },
   "match": {
@@ -6688,7 +6877,7 @@
     "rule": "follow",
     "target": "unit",
     "turnMode": "look",
-    "dist": 34,
+    "dist": 39,
     "height": 27.6,
     "lead": 7.2,
     "lookH": 17.3

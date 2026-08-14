@@ -1,46 +1,66 @@
 # Mobile Suit Arena
 
-**Play it now: https://zombico.github.io/mobile-suit-arena/**
+A standalone playable game exported from [mojulo](https://github.com/zombico/mojulo) — recipes, not renders: `recipe/` is the sovereign source, everything else is its deterministic derived render.
 
 > Pilot a mobile suit — or watch the machines fight.
 
-A single-player 3D mech arena that runs entirely in your browser — no server, no install, no account. Exported from [mojulo](https://github.com/zombico/mojulo) as recipes, not renders: `recipe/` is the sovereign source, everything else is its deterministic derived render.
-
 ## Game modes
 
-### Single Player — take the cockpit
+### Tutorial — Learn your machine — two guided sorties
 
-- **Solo Duel** — 1 v 1: pick your suit and your enemy
-- **Team Battle** — BLUE vs RED: pick your suit; allies and enemies drawn at random
-- **Free for all** — pick your suit; random enemies, everyone hunts everyone
-- **Practice Mode** — no destruction; drill your moves, the AI holds fire until you switch it on
+- **1. Mobile Suit Rising** — City — movement, boost, vulcans, the saber *(maps: City)*
+- **2. Canyon Rumble** — Canyon — weapon switching, staggers, an ACE, then backup arrives *(maps: Canyon)*
+- **3. Encounters in Space** — Space — 6DoF thrust, the space roll, first contact *(maps: Space)*
 
-### AI Spectate — watch, WASD free-cam, Tab to switch fighters
+### Single Player — Take the cockpit
 
-- **Solo Duel** — pick both fighters (mirror matches welcome)
-- **Team Battle** — pick up to three suits per side
-- **Free for all** — pick the cast; everyone fights by default
+- **Solo Duel** — 1 v 1 — pick your suit and your enemy *(maps: Canyon · City · Depot · Arctic Launch · Space · Colony)*
+- **Team Battle** — pick your suit — allies and enemies at random *(maps: Canyon · City · Depot · Arctic Launch · Space · Colony)*
+- **Free for all** — pick your suit — random enemies *(maps: Canyon · City · Depot · Arctic Launch · Space · Colony)*
+- **Practice Mode** — no destruction — drill your moves; the AI holds fire until you switch it on *(maps: Canyon · City · Depot · Arctic Launch · Space · Colony)*
 
-### Hangar
+### AI Spectate — Watch — WASD free-cam, Tab to switch fighters
 
-Inspect the suits up close — turntables, liveries, weapons.
+- **Solo Duel** — watch a 1 v 1 *(maps: Canyon · City · Depot · Arctic Launch · Space · Colony)*
+- **Team Battle** — watch BLUE vs RED *(maps: Canyon · City · Depot · Arctic Launch · Space · Colony)*
+- **Free for all** — watch an all-AI free-for-all *(maps: Canyon · City · Depot · Arctic Launch · Space · Colony)*
 
-Every mode plays on any of the five maps — **Canyon · City · Depot · Space · Colony** — chosen on the setup screen, with a difficulty select (RECRUIT / ACE / NEWTYPE) on piloted modes. Controls are listed in the in-game pause menu (☰); gamepads are supported.
-
-## How it works
-
-There is no game server. The whole simulation — physics, combat, the AI opponents, the soundtrack — runs in your browser from static files:
-
-- `game.html` — the menu shell (mode picker, setup screens, score screens, music)
-- `levels/` — one page per battle: the arena world with three.js inlined
-- `assets/figures/` — the rigged mobile suits, stored **once** and shared by every level; your browser caches them, so the first battle downloads the roster (~20 MB compressed) and later battles load in a couple of MB
-- `assets/` — the synthesized score (WAV), map stills, hangar portraits
-
-Because the level pages fetch the shared suits from within the folder, the game needs to be served over HTTP (as GitHub Pages does here) — opening `game.html` straight from the filesystem won't load battles.
+### Hangar — Inspect the suits — turntable, liveries, weapons
 
 ## Provenance
 
 - game ref: `sk_ms_arena`
-- 35 minted level worlds (one `recipe/<ref>.json` each)
+- manifest sha256/16: `ecc2375e5365db5e`
+- levels: 45 minted level worlds (one `recipe/<ref>.json` each)
 
-Everything under `recipe/` is the sovereign manifest set. On any host running mojulo, those recipes reproduce this exact artifact: each `recipe/<ref>.json` is a world manifest whose `game:` channel mints the level, and `recipe/game.json` promotes them back into this shell. Same recipes → the same game.
+## How to play
+
+Serve this folder with any static server and open `game.html`:
+
+```bash
+npx serve .        # or: python3 -m http.server
+```
+
+GitHub Pages works as-is (the folder has zero EXTERNAL dependencies — no CDN).
+Level pages fetch the shared rigged-figure bank from `assets/figures/` within
+this folder (hoisted out of each page so no file tops static hosts' size
+limits, and the browser caches the suits across levels) — so the folder needs
+an HTTP server; opening `game.html` via `file://` will not load levels.
+
+World geometry is likewise hoisted into shared `assets/geometry/` files (levels
+that play on the same map fetch its terrain once and the browser caches it).
+
+## How to re-mint
+
+On any host running mojulo, the recipes under `recipe/` reproduce this artifact:
+each `recipe/<ref>.json` is a world manifest (`compose_world` + its `game:`
+channel mints the level), and `recipe/game.json` is the game manifest
+(`create_game` promotes the levels back into this shell). Same recipes → the
+same game, byte-for-byte where it matters.
+
+## Files
+
+- `assets/` — 117 files, 198 MB
+- `game.html` — 157 KB
+- `recipe/` — 53 files, 34 MB
+- `levels/` — 73 files, 124 MB

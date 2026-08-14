@@ -200,10 +200,10 @@
               "projectileSpeed": 912.6,
               "projectileGravity": 14.4,
               "lobAngle": 0,
-              "splashRadius": 13,
+              "splashRadius": 20.4,
               "projRadius": 4.8,
-              "proximityRadius": 9.6,
-              "damage": 90,
+              "proximityRadius": 15.6,
+              "damage": 150,
               "eye": 16.8,
               "armTime": 0.05,
               "fuse": 3,
@@ -351,12 +351,30 @@
               "impact": 6,
               "muzzleOffset": {
                 "f": 8.2,
-                "r": 1.4,
+                "r": 2.4,
                 "u": 22.1
               },
+              "muzzleDual": true,
               "fxColor": 16769162,
               "fxScale": 2.9,
-              "reticleDist": 168.1
+              "reticleDist": 168.1,
+              "sfx": {
+                "shot": [
+                  {
+                    "type": "burst",
+                    "decay": 0.05,
+                    "vol": 0.24,
+                    "highpass": 800
+                  },
+                  {
+                    "type": "thump",
+                    "from": "A2",
+                    "to": "D1",
+                    "decay": 0.07,
+                    "vol": 0.28
+                  }
+                ]
+              }
             }
           }
         ],
@@ -561,10 +579,10 @@
               "projectileSpeed": 912.6,
               "projectileGravity": 14.4,
               "lobAngle": 0,
-              "splashRadius": 13,
+              "splashRadius": 20.4,
               "projRadius": 4.8,
-              "proximityRadius": 9.6,
-              "damage": 90,
+              "proximityRadius": 15.6,
+              "damage": 150,
               "eye": 16.8,
               "armTime": 0.05,
               "fuse": 3,
@@ -712,12 +730,30 @@
               "impact": 6,
               "muzzleOffset": {
                 "f": 8.2,
-                "r": 1.4,
+                "r": 2.4,
                 "u": 22.1
               },
+              "muzzleDual": true,
               "fxColor": 16769162,
               "fxScale": 2.9,
-              "reticleDist": 168.1
+              "reticleDist": 168.1,
+              "sfx": {
+                "shot": [
+                  {
+                    "type": "burst",
+                    "decay": 0.05,
+                    "vol": 0.24,
+                    "highpass": 800
+                  },
+                  {
+                    "type": "thump",
+                    "from": "A2",
+                    "to": "D1",
+                    "decay": 0.07,
+                    "vol": 0.28
+                  }
+                ]
+              }
             }
           }
         ]
@@ -872,10 +908,10 @@
               "projectileSpeed": 912,
               "projectileGravity": 14.4,
               "lobAngle": 0,
-              "splashRadius": 13,
+              "splashRadius": 20.4,
               "projRadius": 4.8,
-              "proximityRadius": 9.6,
-              "damage": 90,
+              "proximityRadius": 15.6,
+              "damage": 150,
               "eye": 16.8,
               "armTime": 0.05,
               "fuse": 3,
@@ -1139,10 +1175,10 @@
               "projectileSpeed": 912,
               "projectileGravity": 14.4,
               "lobAngle": 0,
-              "splashRadius": 13,
+              "splashRadius": 20.4,
               "projRadius": 4.8,
-              "proximityRadius": 9.6,
-              "damage": 90,
+              "proximityRadius": 15.6,
+              "damage": 150,
               "eye": 16.8,
               "armTime": 0.05,
               "fuse": 3,
@@ -1801,6 +1837,7 @@
               "chargeTime": 1.5,
               "chargedImpact": 150,
               "chargedAmmoCost": 3,
+              "chargedDamage": 42,
               "muzzleOffset": {
                 "f": 13.2,
                 "r": 6.7,
@@ -1924,8 +1961,7 @@
                     "vol": 0.44
                   }
                 ]
-              },
-              "chargedDamage": 42
+              }
             }
           },
           {
@@ -1951,7 +1987,7 @@
             "weapon": {
               "fireClass": "area",
               "auto": true,
-              "rof": 14,
+              "rof": 16,
               "magazine": 48,
               "reload": 2.8,
               "coreAngle": 2,
@@ -2046,6 +2082,7 @@
               "chargeTime": 1.5,
               "chargedImpact": 150,
               "chargedAmmoCost": 3,
+              "chargedDamage": 42,
               "muzzleOffset": {
                 "f": 13.2,
                 "r": 6.7,
@@ -2169,8 +2206,7 @@
                     "vol": 0.44
                   }
                 ]
-              },
-              "chargedDamage": 42
+              }
             }
           },
           {
@@ -2196,7 +2232,7 @@
             "weapon": {
               "fireClass": "area",
               "auto": true,
-              "rof": 14,
+              "rof": 16,
               "magazine": 48,
               "reload": 2.8,
               "coreAngle": 2,
@@ -2299,10 +2335,10 @@
               "projectileSpeed": 912,
               "projectileGravity": 14.4,
               "lobAngle": 0,
-              "splashRadius": 17.3,
+              "splashRadius": 24,
               "projRadius": 5.8,
-              "proximityRadius": 9.6,
-              "damage": 100,
+              "proximityRadius": 15.6,
+              "damage": 150,
               "eye": 16.8,
               "armTime": 0.05,
               "fuse": 3,
@@ -2493,12 +2529,30 @@
               "impact": 6,
               "muzzleOffset": {
                 "f": 8.2,
-                "r": 1.4,
+                "r": 2.4,
                 "u": 22.1
               },
+              "muzzleDual": true,
               "fxColor": 16769162,
               "fxScale": 2.9,
-              "reticleDist": 168.1
+              "reticleDist": 168.1,
+              "sfx": {
+                "shot": [
+                  {
+                    "type": "burst",
+                    "decay": 0.05,
+                    "vol": 0.24,
+                    "highpass": 800
+                  },
+                  {
+                    "type": "thump",
+                    "from": "A2",
+                    "to": "D1",
+                    "decay": 0.07,
+                    "vol": 0.28
+                  }
+                ]
+              }
             }
           }
         ],
@@ -2548,10 +2602,10 @@
               "projectileSpeed": 912,
               "projectileGravity": 14.4,
               "lobAngle": 0,
-              "splashRadius": 17.3,
+              "splashRadius": 24,
               "projRadius": 5.8,
-              "proximityRadius": 9.6,
-              "damage": 100,
+              "proximityRadius": 15.6,
+              "damage": 150,
               "eye": 16.8,
               "armTime": 0.05,
               "fuse": 3,
@@ -2742,12 +2796,30 @@
               "impact": 6,
               "muzzleOffset": {
                 "f": 8.2,
-                "r": 1.4,
+                "r": 2.4,
                 "u": 22.1
               },
+              "muzzleDual": true,
               "fxColor": 16769162,
               "fxScale": 2.9,
-              "reticleDist": 168.1
+              "reticleDist": 168.1,
+              "sfx": {
+                "shot": [
+                  {
+                    "type": "burst",
+                    "decay": 0.05,
+                    "vol": 0.24,
+                    "highpass": 800
+                  },
+                  {
+                    "type": "thump",
+                    "from": "A2",
+                    "to": "D1",
+                    "decay": 0.07,
+                    "vol": 0.28
+                  }
+                ]
+              }
             }
           }
         ]
@@ -2827,7 +2899,24 @@
               },
               "fxColor": 16769162,
               "fxScale": 2.9,
-              "reticleDist": 168
+              "reticleDist": 168,
+              "sfx": {
+                "shot": [
+                  {
+                    "type": "burst",
+                    "decay": 0.05,
+                    "vol": 0.24,
+                    "highpass": 800
+                  },
+                  {
+                    "type": "thump",
+                    "from": "A2",
+                    "to": "D1",
+                    "decay": 0.07,
+                    "vol": 0.28
+                  }
+                ]
+              }
             }
           },
           {
@@ -2858,6 +2947,10 @@
             "strikeDamage": 45,
             "strikeCone": 75,
             "combo": 1,
+            "strikeShow": {
+              "default": "heatrod_lash",
+              "forward": "heatrod_dart"
+            },
             "strikeVerbs": {
               "forward": {
                 "strikeReach": 38.4,
@@ -2870,10 +2963,6 @@
               "back": {
                 "topple": true
               }
-            },
-            "strikeShow": {
-              "default": "heatrod_lash",
-              "forward": "heatrod_dart"
             }
           }
         ],
@@ -2937,7 +3026,24 @@
               },
               "fxColor": 16769162,
               "fxScale": 2.9,
-              "reticleDist": 168
+              "reticleDist": 168,
+              "sfx": {
+                "shot": [
+                  {
+                    "type": "burst",
+                    "decay": 0.05,
+                    "vol": 0.24,
+                    "highpass": 800
+                  },
+                  {
+                    "type": "thump",
+                    "from": "A2",
+                    "to": "D1",
+                    "decay": 0.07,
+                    "vol": 0.28
+                  }
+                ]
+              }
             }
           },
           {
@@ -2968,6 +3074,10 @@
             "strikeDamage": 45,
             "strikeCone": 75,
             "combo": 1,
+            "strikeShow": {
+              "default": "heatrod_lash",
+              "forward": "heatrod_dart"
+            },
             "strikeVerbs": {
               "forward": {
                 "strikeReach": 38.4,
@@ -2980,10 +3090,6 @@
               "back": {
                 "topple": true
               }
-            },
-            "strikeShow": {
-              "default": "heatrod_lash",
-              "forward": "heatrod_dart"
             }
           }
         ]
@@ -3327,12 +3433,30 @@
               "impact": 6,
               "muzzleOffset": {
                 "f": 8.2,
-                "r": 1.4,
+                "r": 2.4,
                 "u": 22.1
               },
+              "muzzleDual": true,
               "fxColor": 16769162,
               "fxScale": 2.9,
-              "reticleDist": 168.1
+              "reticleDist": 168.1,
+              "sfx": {
+                "shot": [
+                  {
+                    "type": "burst",
+                    "decay": 0.05,
+                    "vol": 0.24,
+                    "highpass": 800
+                  },
+                  {
+                    "type": "thump",
+                    "from": "A2",
+                    "to": "D1",
+                    "decay": 0.07,
+                    "vol": 0.28
+                  }
+                ]
+              }
             }
           }
         ],
@@ -3660,12 +3784,30 @@
               "impact": 6,
               "muzzleOffset": {
                 "f": 8.2,
-                "r": 1.4,
+                "r": 2.4,
                 "u": 22.1
               },
+              "muzzleDual": true,
               "fxColor": 16769162,
               "fxScale": 2.9,
-              "reticleDist": 168.1
+              "reticleDist": 168.1,
+              "sfx": {
+                "shot": [
+                  {
+                    "type": "burst",
+                    "decay": 0.05,
+                    "vol": 0.24,
+                    "highpass": 800
+                  },
+                  {
+                    "type": "thump",
+                    "from": "A2",
+                    "to": "D1",
+                    "decay": 0.07,
+                    "vol": 0.28
+                  }
+                ]
+              }
             }
           }
         ]
@@ -3696,7 +3838,7 @@
   ],
   "figures": {
     "g_multi": {
-      "unitRef": "sk_80str_v78_skirt_biped_multi",
+      "unitRef": "sk_80str_v78_skirt_biped",
       "frame": true,
       "aim": {
         "shR": {
@@ -3725,10 +3867,10 @@
         "dodge_airtwirl"
       ],
       "space": true,
-      "contrast": true
+      "prelit": "sk_80str_v78_skirt_biped__prelit"
     },
     "z_multi": {
-      "unitRef": "sk_zseries_a11_skirt_biped_multi",
+      "unitRef": "sk_zseries_a11_skirt_biped",
       "aim": {
         "shR": {
           "pitch": 68
@@ -3758,10 +3900,10 @@
         "dodge_airtwirl"
       ],
       "space": true,
-      "contrast": true
+      "prelit": "sk_zseries_a11_skirt_biped_zeonic_green__prelit"
     },
     "toretto_multi": {
-      "unitRef": "sk_toretto_unit_v1_multi",
+      "unitRef": "sk_toretto_unit_v1",
       "aim": {
         "shR": {
           "pitch": 68
@@ -3790,10 +3932,10 @@
         "dodge_twirl"
       ],
       "space": true,
-      "contrast": true
+      "prelit": "sk_toretto_unit_v1__prelit"
     },
     "taisa_multi": {
-      "unitRef": "sk_taisa_unit_v1_captain_multi",
+      "unitRef": "sk_taisa_unit_v1",
       "aim": {
         "shR": {
           "pitch": 68
@@ -3827,10 +3969,10 @@
         "dodge_airtwirl"
       ],
       "space": true,
-      "contrast": true
+      "prelit": "sk_taisa_unit_v1__prelit"
     },
     "diaz_multi": {
-      "unitRef": "sk_diaz_unit_v1_multi",
+      "unitRef": "sk_diaz_unit_v1",
       "aim": {
         "shR": {
           "pitch": 13
@@ -3858,10 +4000,10 @@
         "dodge_twirl"
       ],
       "space": true,
-      "contrast": true
+      "prelit": "sk_diaz_unit_v1__prelit"
     },
     "geof_multi": {
-      "unitRef": "sk_geof_unit_v1_multi",
+      "unitRef": "sk_geof_unit_v1",
       "aim": {
         "shR": {
           "pitch": 68
@@ -3922,10 +4064,10 @@
           "elbow": 20
         }
       },
-      "contrast": true
+      "prelit": "sk_geof_unit_v1__prelit"
     },
     "gframe_mk2_multi": {
-      "unitRef": "sk_gframe_mk2_unit_v1_multi",
+      "unitRef": "sk_gframe_mk2_larmfix",
       "aim": {
         "shR": {
           "pitch": 68
@@ -3957,7 +4099,7 @@
         "dodge_airtwirl"
       ],
       "space": true,
-      "contrast": true
+      "prelit": "sk_gframe_mk2_larmfix__prelit"
     }
   },
   "match": {

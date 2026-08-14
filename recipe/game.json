@@ -307,6 +307,10 @@
       "ref": "sk_ms_arena_solo_hangar"
     },
     {
+      "title": "Solo Duel · Arctic Launch",
+      "ref": "sk_ms_arena_solo_arctic"
+    },
+    {
       "title": "Solo Duel · Space",
       "ref": "sk_ms_arena_solo_space"
     },
@@ -325,6 +329,10 @@
     {
       "title": "Practice · Depot",
       "ref": "sk_ms_arena_practice_hangar"
+    },
+    {
+      "title": "Practice · Arctic Launch",
+      "ref": "sk_ms_arena_practice_arctic"
     },
     {
       "title": "Practice · Space",
@@ -347,6 +355,10 @@
       "ref": "sk_ms_arena_team_hangar"
     },
     {
+      "title": "Team Battle · Arctic Launch",
+      "ref": "sk_ms_arena_team_arctic"
+    },
+    {
       "title": "Team Battle · Space",
       "ref": "sk_ms_arena_team_space"
     },
@@ -365,6 +377,10 @@
     {
       "title": "Free for all · Depot",
       "ref": "sk_ms_arena_ffa_hangar"
+    },
+    {
+      "title": "Free for all · Arctic Launch",
+      "ref": "sk_ms_arena_ffa_arctic"
     },
     {
       "title": "Free for all · Space",
@@ -387,6 +403,10 @@
       "ref": "sk_ms_arena_watch_solo_hangar"
     },
     {
+      "title": "AI Spectate — Solo Duel · Arctic Launch",
+      "ref": "sk_ms_arena_watch_solo_arctic"
+    },
+    {
       "title": "AI Spectate — Solo Duel · Space",
       "ref": "sk_ms_arena_watch_solo_space"
     },
@@ -407,6 +427,10 @@
       "ref": "sk_ms_arena_watch_team_hangar"
     },
     {
+      "title": "AI Spectate — Team Battle · Arctic Launch",
+      "ref": "sk_ms_arena_watch_team_arctic"
+    },
+    {
       "title": "AI Spectate — Team Battle · Space",
       "ref": "sk_ms_arena_watch_team_space"
     },
@@ -425,6 +449,10 @@
     {
       "title": "AI Spectate — Free for all · Depot",
       "ref": "sk_ms_arena_watch_ffa_hangar"
+    },
+    {
+      "title": "AI Spectate — Free for all · Arctic Launch",
+      "ref": "sk_ms_arena_watch_ffa_arctic"
     },
     {
       "title": "AI Spectate — Free for all · Space",
@@ -527,6 +555,11 @@
                 "shot": "/outcomes/sk_ms_arena/map-hangar.png"
               },
               {
+                "ref": "sk_ms_arena_solo_arctic",
+                "label": "Arctic Launch",
+                "shot": "/outcomes/sk_ms_arena/map-arctic.png"
+              },
+              {
                 "ref": "sk_ms_arena_solo_space",
                 "label": "Space",
                 "shot": "/outcomes/sk_ms_arena/map-space.png"
@@ -558,6 +591,11 @@
                 "ref": "sk_ms_arena_team_hangar",
                 "label": "Depot",
                 "shot": "/outcomes/sk_ms_arena/map-hangar.png"
+              },
+              {
+                "ref": "sk_ms_arena_team_arctic",
+                "label": "Arctic Launch",
+                "shot": "/outcomes/sk_ms_arena/map-arctic.png"
               },
               {
                 "ref": "sk_ms_arena_team_space",
@@ -593,6 +631,11 @@
                 "shot": "/outcomes/sk_ms_arena/map-hangar.png"
               },
               {
+                "ref": "sk_ms_arena_ffa_arctic",
+                "label": "Arctic Launch",
+                "shot": "/outcomes/sk_ms_arena/map-arctic.png"
+              },
+              {
                 "ref": "sk_ms_arena_ffa_space",
                 "label": "Space",
                 "shot": "/outcomes/sk_ms_arena/map-space.png"
@@ -624,6 +667,11 @@
                 "ref": "sk_ms_arena_practice_hangar",
                 "label": "Depot",
                 "shot": "/outcomes/sk_ms_arena/map-hangar.png"
+              },
+              {
+                "ref": "sk_ms_arena_practice_arctic",
+                "label": "Arctic Launch",
+                "shot": "/outcomes/sk_ms_arena/map-arctic.png"
               },
               {
                 "ref": "sk_ms_arena_practice_space",
@@ -667,6 +715,11 @@
                 "shot": "/outcomes/sk_ms_arena/map-hangar.png"
               },
               {
+                "ref": "sk_ms_arena_watch_solo_arctic",
+                "label": "Arctic Launch",
+                "shot": "/outcomes/sk_ms_arena/map-arctic.png"
+              },
+              {
                 "ref": "sk_ms_arena_watch_solo_space",
                 "label": "Space",
                 "shot": "/outcomes/sk_ms_arena/map-space.png"
@@ -700,6 +753,11 @@
                 "shot": "/outcomes/sk_ms_arena/map-hangar.png"
               },
               {
+                "ref": "sk_ms_arena_watch_team_arctic",
+                "label": "Arctic Launch",
+                "shot": "/outcomes/sk_ms_arena/map-arctic.png"
+              },
+              {
                 "ref": "sk_ms_arena_watch_team_space",
                 "label": "Space",
                 "shot": "/outcomes/sk_ms_arena/map-space.png"
@@ -731,6 +789,11 @@
                 "ref": "sk_ms_arena_watch_ffa_hangar",
                 "label": "Depot",
                 "shot": "/outcomes/sk_ms_arena/map-hangar.png"
+              },
+              {
+                "ref": "sk_ms_arena_watch_ffa_arctic",
+                "label": "Arctic Launch",
+                "shot": "/outcomes/sk_ms_arena/map-arctic.png"
               },
               {
                 "ref": "sk_ms_arena_watch_ffa_space",
@@ -786,20 +849,20 @@
             "armament": "LONG RIFLE · BEAM SABER · HYPER BAZOOKA · HEAD VULCAN"
           },
           "portrait": "sk_ms_head_unit",
-          "preview": "sk_ms_preview_unit_federal",
+          "preview": "sk_ms_card_unit_tricolor",
           "liveries": [
             {
-              "id": "federal",
+              "id": "tricolor",
               "hex": "#e7dfcf",
-              "preview": "sk_ms_preview_unit_federal"
+              "preview": "sk_ms_card_unit_tricolor"
             },
             {
-              "id": "union",
-              "hex": "#a9c9c0",
-              "preview": "sk_ms_preview_unit_union"
+              "id": "eff_ground",
+              "hex": "#6f7a52",
+              "preview": "sk_ms_card_unit_eff_ground"
             }
           ],
-          "livery": "federal"
+          "livery": "tricolor"
         },
         "z_unit": {
           "stats": {
@@ -809,17 +872,17 @@
             "armament": "MACHINE GUN · HEAT AXE · GRENADE · BAZOOKA"
           },
           "portrait": "sk_ms_head_z_unit",
-          "preview": "sk_ms_preview_z_unit_zeonic",
+          "preview": "sk_ms_card_z_unit_zeonic",
           "liveries": [
             {
               "id": "zeonic",
               "hex": "#a8bb90",
-              "preview": "sk_ms_preview_z_unit_zeonic"
+              "preview": "sk_ms_card_z_unit_zeonic"
             },
             {
               "id": "akai",
               "hex": "#c05540",
-              "preview": "sk_ms_preview_z_unit_akai"
+              "preview": "sk_ms_card_z_unit_akai"
             }
           ],
           "livery": "zeonic"
@@ -832,17 +895,17 @@
             "armament": "GIANT BAZOOKA · HEAT SABER · TORSO BEAM"
           },
           "portrait": "sk_ms_head_t_unit",
-          "preview": "sk_ms_preview_t_unit_black",
+          "preview": "sk_ms_card_t_unit_black",
           "liveries": [
             {
               "id": "black",
               "hex": "#2a2630",
-              "preview": "sk_ms_preview_t_unit_black"
+              "preview": "sk_ms_card_t_unit_black"
             },
             {
               "id": "ground",
               "hex": "#4a3628",
-              "preview": "sk_ms_preview_t_unit_ground"
+              "preview": "sk_ms_card_t_unit_ground"
             }
           ],
           "livery": "black"
@@ -856,17 +919,17 @@
             "armament": "BEAM RIFLE · DOUBLE SABER · WRIST GATLING"
           },
           "portrait": "sk_ms_head_taisa_unit",
-          "preview": "sk_ms_preview_taisa_unit_akai",
+          "preview": "sk_ms_card_taisa_unit_akai",
           "liveries": [
             {
               "id": "akai",
               "hex": "#c05540",
-              "preview": "sk_ms_preview_taisa_unit_akai"
+              "preview": "sk_ms_card_taisa_unit_akai"
             },
             {
               "id": "zeonic",
               "hex": "#4c5155",
-              "preview": "sk_ms_preview_taisa_unit_zeonic"
+              "preview": "sk_ms_card_taisa_unit_zeonic"
             }
           ],
           "livery": "akai"
@@ -879,17 +942,17 @@
             "armament": "ANGULAR BAZOOKA · BEAM SABER · DUAL PISTOLS · HEAD VULCAN"
           },
           "portrait": "sk_ms_head_d_unit",
-          "preview": "sk_ms_preview_d_unit_akai",
+          "preview": "sk_ms_card_d_unit_akai",
           "liveries": [
             {
               "id": "akai",
               "hex": "#8a3323",
-              "preview": "sk_ms_preview_d_unit_akai"
+              "preview": "sk_ms_card_d_unit_akai"
             },
             {
               "id": "black",
               "hex": "#232228",
-              "preview": "sk_ms_preview_d_unit_black"
+              "preview": "sk_ms_card_d_unit_black"
             }
           ],
           "livery": "akai"
@@ -902,17 +965,17 @@
             "armament": "FINGER VULCANS · HEAT SWORD · HEAT ROD"
           },
           "portrait": "sk_ms_head_geof_unit",
-          "preview": "sk_ms_preview_geof_unit_blue",
+          "preview": "sk_ms_card_geof_unit_blue",
           "liveries": [
             {
               "id": "blue",
               "hex": "#5b7fb2",
-              "preview": "sk_ms_preview_geof_unit_blue"
+              "preview": "sk_ms_card_geof_unit_blue"
             },
             {
               "id": "ground",
               "hex": "#c2ab7d",
-              "preview": "sk_ms_preview_geof_unit_ground"
+              "preview": "sk_ms_card_geof_unit_ground"
             }
           ],
           "livery": "blue"
@@ -926,7 +989,7 @@
             "armament": "V78 BEAM RIFLE · BEAM SABER · HEAD VULCAN"
           },
           "portrait": "sk_ms_head_gframe_mk2_unit",
-          "preview": "sk_ms_preview_gframe_mk2_unit"
+          "preview": "sk_ms_card_gframe_mk2_unit"
         }
       }
     },
@@ -966,7 +1029,7 @@
             "armament": "LONG RIFLE · BEAM SABER · HYPER BAZOOKA · HEAD VULCAN"
           },
           "portrait": "sk_ms_head_unit",
-          "preview": "sk_ms_preview_unit_federal"
+          "preview": "sk_ms_card_unit_tricolor"
         },
         "wa_z_unit": {
           "stats": {
@@ -976,7 +1039,7 @@
             "armament": "MACHINE GUN · HEAT AXE · GRENADE · BAZOOKA"
           },
           "portrait": "sk_ms_head_z_unit",
-          "preview": "sk_ms_preview_z_unit_zeonic"
+          "preview": "sk_ms_card_z_unit_zeonic"
         },
         "wa_t_unit": {
           "stats": {
@@ -986,7 +1049,7 @@
             "armament": "GIANT BAZOOKA · HEAT SABER · TORSO BEAM"
           },
           "portrait": "sk_ms_head_t_unit",
-          "preview": "sk_ms_preview_t_unit_black"
+          "preview": "sk_ms_card_t_unit_black"
         },
         "wa_taisa_unit": {
           "stats": {
@@ -997,7 +1060,7 @@
             "armament": "BEAM RIFLE · DOUBLE SABER · WRIST GATLING"
           },
           "portrait": "sk_ms_head_taisa_unit",
-          "preview": "sk_ms_preview_taisa_unit_akai"
+          "preview": "sk_ms_card_taisa_unit_akai"
         },
         "wa_d_unit": {
           "stats": {
@@ -1007,7 +1070,7 @@
             "armament": "ANGULAR BAZOOKA · BEAM SABER · DUAL PISTOLS · HEAD VULCAN"
           },
           "portrait": "sk_ms_head_d_unit",
-          "preview": "sk_ms_preview_d_unit_akai"
+          "preview": "sk_ms_card_d_unit_akai"
         },
         "wa_geof_unit": {
           "stats": {
@@ -1017,7 +1080,7 @@
             "armament": "FINGER VULCANS · HEAT SWORD · HEAT ROD"
           },
           "portrait": "sk_ms_head_geof_unit",
-          "preview": "sk_ms_preview_geof_unit_blue"
+          "preview": "sk_ms_card_geof_unit_blue"
         },
         "wa_gframe_mk2_unit": {
           "stats": {
@@ -1028,7 +1091,7 @@
             "armament": "V78 BEAM RIFLE · BEAM SABER · HEAD VULCAN"
           },
           "portrait": "sk_ms_head_gframe_mk2_unit",
-          "preview": "sk_ms_preview_gframe_mk2_unit"
+          "preview": "sk_ms_card_gframe_mk2_unit"
         }
       }
     },
@@ -1045,7 +1108,7 @@
             "armament": "LONG RIFLE · BEAM SABER · HYPER BAZOOKA · HEAD VULCAN"
           },
           "portrait": "sk_ms_head_unit",
-          "preview": "sk_ms_preview_unit_federal"
+          "preview": "sk_ms_card_unit_tricolor"
         },
         "wb_z_unit": {
           "stats": {
@@ -1055,7 +1118,7 @@
             "armament": "MACHINE GUN · HEAT AXE · GRENADE · BAZOOKA"
           },
           "portrait": "sk_ms_head_z_unit",
-          "preview": "sk_ms_preview_z_unit_zeonic"
+          "preview": "sk_ms_card_z_unit_zeonic"
         },
         "wb_t_unit": {
           "stats": {
@@ -1065,7 +1128,7 @@
             "armament": "GIANT BAZOOKA · HEAT SABER · TORSO BEAM"
           },
           "portrait": "sk_ms_head_t_unit",
-          "preview": "sk_ms_preview_t_unit_black"
+          "preview": "sk_ms_card_t_unit_black"
         },
         "wb_taisa_unit": {
           "stats": {
@@ -1076,7 +1139,7 @@
             "armament": "BEAM RIFLE · DOUBLE SABER · WRIST GATLING"
           },
           "portrait": "sk_ms_head_taisa_unit",
-          "preview": "sk_ms_preview_taisa_unit_akai"
+          "preview": "sk_ms_card_taisa_unit_akai"
         },
         "wb_d_unit": {
           "stats": {
@@ -1086,7 +1149,7 @@
             "armament": "ANGULAR BAZOOKA · BEAM SABER · DUAL PISTOLS · HEAD VULCAN"
           },
           "portrait": "sk_ms_head_d_unit",
-          "preview": "sk_ms_preview_d_unit_akai"
+          "preview": "sk_ms_card_d_unit_akai"
         },
         "wb_geof_unit": {
           "stats": {
@@ -1096,7 +1159,7 @@
             "armament": "FINGER VULCANS · HEAT SWORD · HEAT ROD"
           },
           "portrait": "sk_ms_head_geof_unit",
-          "preview": "sk_ms_preview_geof_unit_blue"
+          "preview": "sk_ms_card_geof_unit_blue"
         },
         "wb_gframe_mk2_unit": {
           "stats": {
@@ -1107,7 +1170,7 @@
             "armament": "V78 BEAM RIFLE · BEAM SABER · HEAD VULCAN"
           },
           "portrait": "sk_ms_head_gframe_mk2_unit",
-          "preview": "sk_ms_preview_gframe_mk2_unit"
+          "preview": "sk_ms_card_gframe_mk2_unit"
         }
       }
     },

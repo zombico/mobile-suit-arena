@@ -3696,7 +3696,7 @@
   ],
   "figures": {
     "g_multi": {
-      "unitRef": "sk_80str_v78_skirt_biped_multi",
+      "unitRef": "sk_80str_v78_skirt_biped",
       "frame": true,
       "aim": {
         "shR": {
@@ -3725,10 +3725,10 @@
         "dodge_airtwirl"
       ],
       "space": true,
-      "contrast": true
+      "prelit": "sk_80str_v78_skirt_biped__prelit"
     },
     "z_multi": {
-      "unitRef": "sk_zseries_a11_skirt_biped_multi",
+      "unitRef": "sk_zseries_a11_skirt_biped",
       "aim": {
         "shR": {
           "pitch": 68
@@ -3758,10 +3758,10 @@
         "dodge_airtwirl"
       ],
       "space": true,
-      "contrast": true
+      "prelit": "sk_zseries_a11_skirt_biped_zeonic_green__prelit"
     },
     "toretto_multi": {
-      "unitRef": "sk_toretto_unit_v1_multi",
+      "unitRef": "sk_toretto_unit_v1",
       "aim": {
         "shR": {
           "pitch": 68
@@ -3790,10 +3790,10 @@
         "dodge_twirl"
       ],
       "space": true,
-      "contrast": true
+      "prelit": "sk_toretto_unit_v1__prelit"
     },
     "taisa_multi": {
-      "unitRef": "sk_taisa_unit_v1_captain_multi",
+      "unitRef": "sk_taisa_unit_v1",
       "aim": {
         "shR": {
           "pitch": 68
@@ -3827,10 +3827,10 @@
         "dodge_airtwirl"
       ],
       "space": true,
-      "contrast": true
+      "prelit": "sk_taisa_unit_v1__prelit"
     },
     "diaz_multi": {
-      "unitRef": "sk_diaz_unit_v1_multi",
+      "unitRef": "sk_diaz_unit_v1",
       "aim": {
         "shR": {
           "pitch": 13
@@ -3858,10 +3858,10 @@
         "dodge_twirl"
       ],
       "space": true,
-      "contrast": true
+      "prelit": "sk_diaz_unit_v1__prelit"
     },
     "geof_multi": {
-      "unitRef": "sk_geof_unit_v1_multi",
+      "unitRef": "sk_geof_unit_v1",
       "aim": {
         "shR": {
           "pitch": 68
@@ -3922,10 +3922,10 @@
           "elbow": 20
         }
       },
-      "contrast": true
+      "prelit": "sk_geof_unit_v1__prelit"
     },
     "gframe_mk2_multi": {
-      "unitRef": "sk_gframe_mk2_unit_v1_multi",
+      "unitRef": "sk_gframe_mk2_larmfix",
       "aim": {
         "shR": {
           "pitch": 68
@@ -3957,7 +3957,7 @@
         "dodge_airtwirl"
       ],
       "space": true,
-      "contrast": true
+      "prelit": "sk_gframe_mk2_larmfix__prelit"
     }
   },
   "match": {
