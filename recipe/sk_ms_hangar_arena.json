@@ -250088,7 +250088,8 @@
           }
         ],
         "collideRadius": 7.2,
-        "collideHeight": 24
+        "collideHeight": 24,
+        "boostInertia": 0.5
       },
       "body": {
         "type": "figure-rig",
@@ -250397,7 +250398,8 @@
           }
         ],
         "collideRadius": 7.2,
-        "collideHeight": 24
+        "collideHeight": 24,
+        "boostInertia": 0.5
       },
       "body": {
         "type": "figure-rig",
@@ -250652,7 +250654,8 @@
           }
         ],
         "collideRadius": 7.2,
-        "collideHeight": 24
+        "collideHeight": 24,
+        "boostInertia": 0.5
       },
       "body": {
         "type": "figure-rig",
@@ -250935,7 +250938,8 @@
           }
         ],
         "collideRadius": 7.2,
-        "collideHeight": 24
+        "collideHeight": 24,
+        "boostInertia": 0.5
       },
       "body": {
         "type": "figure-rig",
@@ -251226,7 +251230,8 @@
           }
         ],
         "collideRadius": 7.2,
-        "collideHeight": 24
+        "collideHeight": 24,
+        "boostInertia": 0.5
       },
       "body": {
         "type": "figure-rig",
@@ -251374,7 +251379,8 @@
           }
         ],
         "collideRadius": 7.2,
-        "collideHeight": 24
+        "collideHeight": 24,
+        "boostInertia": 0.5
       },
       "body": {
         "type": "figure-rig",
@@ -251745,7 +251751,8 @@
           }
         ],
         "collideRadius": 7.2,
-        "collideHeight": 24
+        "collideHeight": 24,
+        "boostInertia": 0.5
       },
       "body": {
         "type": "figure-rig",

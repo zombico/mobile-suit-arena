@@ -1,5 +1,7 @@
 # Mobile Suit Arena
 
+**▶ Play it now: [zombico.github.io/mobile-suit-arena](https://zombico.github.io/mobile-suit-arena/)**
+
 A standalone playable game exported from [mojulo](https://github.com/zombico/mojulo) — recipes, not renders: `recipe/` is the sovereign source, everything else is its deterministic derived render.
 
 > Pilot a mobile suit — or watch the machines fight.
@@ -26,6 +28,56 @@ A standalone playable game exported from [mojulo](https://github.com/zombico/moj
 - **Free for all** — watch an all-AI free-for-all *(maps: Canyon · City · Depot · Arctic Launch · Space · Colony)*
 
 ### Hangar — Inspect the suits — turntable, liveries, weapons
+
+## Built with mojulo
+
+There is no game engine and no art pipeline behind this. The whole game was built by
+talking to a coding agent whose workshop is [mojulo](https://github.com/zombico/mojulo) —
+a local substrate where everything the agent makes is minted as a small deterministic
+**recipe** into a SQLite database on the operator's own machine. The suits, the maps, the
+match modes, the synthesized music, the tutorial director, and this export are all rows in
+that database, each reproducible byte-for-byte from its recipe.
+
+- **Worlds are manifests.** A level is a JSON manifest (see `recipe/`) — terrain geometry,
+  the suit roster, arena bounds, match mode, audio — resolved into a three.js scene at
+  export time. The simulation is data-composed too: each suit's handling is a plain rule
+  object (`speed`, `boostMax`, `dodge`, `tackle`, `boostInertia`, …) interpreted by a
+  shared engine, so a new suit is data, not code.
+- **Music is math.** The scores and SFX are seeded synthesis (mojulo's beats system) —
+  no samples; the WAVs in `assets/` are offline renders of tiny seeded recipes.
+- **Levels must prove themselves.** mojulo refuses to mint a game level unless a compiled
+  traversal proves it completable — playability is an invariant, not a hope.
+- **Mechanics land conversationally.** The newest one, **boost inertia**, shipped exactly
+  that way: describe the feel ("the suit should skid for half a second when the thrust
+  cuts, leaning against its own momentum, and a melee swing plants it"), and the agent
+  wires it into the shared engine as an opt-in rule parameter, regression-tests it, and
+  re-mints the fleet — no rig was rebaked, because the braking pose is the existing boost
+  animation played transposed (a left skid plays the boost-right lean).
+
+## How a suit is made — the 3D shapes
+
+Every mobile suit is composed from three families of primitive solids, authored as
+numbers, never sculpted in a modeling tool:
+
+- **Lathes** — a radius profile spun around an axis, the way a chess pawn is turned on a
+  lathe. Limb segments, joints, ankles, gun barrels.
+- **Extrudes** — a 2D outline pushed through a depth. Armor plates, the chest box, skirts,
+  shields, feet.
+- **Sweeps** — a profile dragged along a curved path. Hoses, curved guards, the odd horn.
+
+The flagship suit in this roster is **58 named parts** (`foot_l`, `knee_pad_r`,
+`ankle_guard_l`, `thigh_cross_r`, …) totalling **479 primitives** — 137 lathes, 330
+extrudes, 12 sweeps. Each part is authored alone at its own origin on mojulo's
+*workbench*, then an *assembler* seats the parts into one body (parts drop under gravity
+onto the part below, so nobody hand-computes a lift). The assembled body is welded to a
+skeleton — each part rides one bone — and animation is procedural pose curves shared by
+the whole roster: every suit walks, boosts, and swings from the same choreography shelf,
+which is why a new suit inherits the full moveset the moment it is assembled.
+
+There are no textures and no runtime lights. Every primitive carries a tint and a material
+grain, baked into per-vertex colours; the hero finishes go one step further and bake full
+global illumination into those same vertex colours offline — which is how the suits read
+as lit metal while the browser does zero lighting work.
 
 ## Provenance
 
