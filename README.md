@@ -29,6 +29,12 @@ A standalone playable game exported from [mojulo](https://github.com/zombico/moj
 
 ### Hangar — Inspect the suits — turntable, liveries, weapons
 
+### About — on the title screen (Start / About)
+
+What this is and what made it: levels and suits generated from mojulo's 3D primitives,
+music and SFX synthesized from seeded math, pixel art by Codex — with links to the source,
+mojulo (GitHub / npm), and mojulo.ai, under the hangar's own theme, *Hangar Vigil*.
+
 ## Built with mojulo
 
 There is no game engine and no art pipeline behind this. The whole game was built by

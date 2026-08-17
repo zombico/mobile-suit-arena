@@ -184,6 +184,21 @@
   .screen.art-start{justify-content:flex-end;min-height:92vh;padding-bottom:3vh}
   .screen.art-menu{justify-content:flex-end;min-height:88vh;padding-bottom:5vh}
   .screen .ghost{opacity:0;pointer-events:none;user-select:none}
+  /* ---- the About page (title screen: Start / About): provenance card + link anchors.
+     The card gets its own opaque dark overlay (prose over the title art is unreadable on the
+     translucent panel) and scrolls internally; body.hud .card would out-cascade a plain
+     .about-card background, hence the doubled selector. ---- */
+  .screen.about{justify-content:flex-start;min-height:0;padding-top:4vh}
+  button.start-about{font-size:12px;padding:7px 26px;letter-spacing:2px;text-transform:uppercase;color:var(--dim)}
+  .about-card,body.hud .card.about-card{background:rgba(4,8,14,.88)}
+  .about-card{max-width:720px;width:100%;text-align:left;margin:0;max-height:66vh;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin}
+  .about-card p{margin:0 0 12px;font-size:13.5px;line-height:1.55;color:var(--ink)}
+  .about-card p a{color:var(--accent);text-decoration:underline;text-underline-offset:2px}
+  .about-card .about-foot{font-size:11px;color:var(--dim);margin:10px 0 0}
+  .about-links{display:flex;flex-direction:column;gap:8px;margin-top:4px}
+  .about-links a{display:block;padding:10px 14px;border:1px solid var(--line);border-radius:6px;background:var(--panel);color:var(--accent);text-decoration:none;font-size:14px;letter-spacing:1px;text-transform:uppercase}
+  .about-links a:hover{box-shadow:0 0 16px rgba(95,220,255,.18)}
+  .about-links a .sub{display:block;font-size:11px;color:var(--dim);margin-top:2px;text-transform:none;letter-spacing:0}
 </style></head><body class="hud">
 <button id="gearBtn" title="settings" aria-label="settings">⚙</button>
 <button id="menuBtn" title="menu" aria-label="pause menu" style="display:none">☰</button>
@@ -635,7 +650,7 @@ const MENU = [{"id":"tutorial","title":"Tutorial","subtitle":"Learn your machine
 const LEVELS_ENTRY = MENU && MENU.find((en) => en.kind === 'levels');
 const LEVEL_BY_REF = {};   // ref → level entry, so a menu 'mode' resolves its variant refs to launchable levels
 for (const l of LEVELS) LEVEL_BY_REF[l.ref] = l;
-const MUSIC = {"menu":"assets/sk_ms_menu_loop.wav","battle":["assets/sk_qh71f3s3th.wav","assets/sk_edsk7vhxxb.wav","assets/sk_qev9kzqz5e.wav","assets/sk_ernkpg7avf.wav","assets/sk_p7348t4kaa.wav"]};   // resolved score { menu: src|null, battle: [src,…] } or null
+const MUSIC = {"menu":"assets/sk_ms_menu_loop.wav","about":"assets/sk_sawa34vuxd.wav","battle":["assets/sk_qh71f3s3th.wav","assets/sk_edsk7vhxxb.wav","assets/sk_qev9kzqz5e.wav","assets/sk_ernkpg7avf.wav","assets/sk_p7348t4kaa.wav"]};   // resolved score { menu: src|null, battle: [src,…] } or null
 const SETUP = {"suits":{"style":"hangar","label":"select your machine","cards":{"unit":{"stats":{"hull":1000,"shield":100,"boost armor":"lv 1","speed":"34 · boost 74","armament":"LONG RIFLE · BEAM SABER · HYPER BAZOOKA · HEAD VULCAN"},"portrait":"assets/sk_ms_head_unit.png","preview":"levels/preview-sk_ms_card_unit_tricolor.html","liveries":[{"id":"tricolor","hex":"#e7dfcf","preview":"levels/preview-sk_ms_card_unit_tricolor.html"},{"id":"eff_ground","hex":"#6f7a52","preview":"levels/preview-sk_ms_card_unit_eff_ground.html"}],"livery":"tricolor"},"z_unit":{"stats":{"hull":700,"boost armor":"lv 1","speed":"34 · boost 74","armament":"MACHINE GUN · HEAT AXE · GRENADE · BAZOOKA"},"portrait":"assets/sk_ms_head_z_unit.png","preview":"levels/preview-sk_ms_card_z_unit_zeonic.html","liveries":[{"id":"zeonic","hex":"#a8bb90","preview":"levels/preview-sk_ms_card_z_unit_zeonic.html"},{"id":"akai","hex":"#c05540","preview":"levels/preview-sk_ms_card_z_unit_akai.html"}],"livery":"zeonic"},"t_unit":{"stats":{"hull":800,"boost armor":"lv 1","speed":"34 · boost 74","armament":"GIANT BAZOOKA · HEAT SABER · TORSO BEAM"},"portrait":"assets/sk_ms_head_t_unit.png","preview":"levels/preview-sk_ms_card_t_unit_black.html","liveries":[{"id":"black","hex":"#2a2630","preview":"levels/preview-sk_ms_card_t_unit_black.html"},{"id":"ground","hex":"#4a3628","preview":"levels/preview-sk_ms_card_t_unit_ground.html"}],"livery":"black"},"taisa_unit":{"stats":{"hull":1000,"shield":100,"boost armor":"lv 1","speed":"34 · boost 74","armament":"BEAM RIFLE · DOUBLE SABER · WRIST GATLING"},"portrait":"assets/sk_ms_head_taisa_unit.png","preview":"levels/preview-sk_ms_card_taisa_unit_akai.html","liveries":[{"id":"akai","hex":"#c05540","preview":"levels/preview-sk_ms_card_taisa_unit_akai.html"},{"id":"zeonic","hex":"#4c5155","preview":"levels/preview-sk_ms_card_taisa_unit_zeonic.html"}],"livery":"akai"},"d_unit":{"stats":{"hull":800,"boost armor":"lv 1","speed":"34 · boost 74","armament":"ANGULAR BAZOOKA · BEAM SABER · DUAL PISTOLS · HEAD VULCAN"},"portrait":"assets/sk_ms_head_d_unit.png","preview":"levels/preview-sk_ms_card_d_unit_akai.html","liveries":[{"id":"akai","hex":"#8a3323","preview":"levels/preview-sk_ms_card_d_unit_akai.html"},{"id":"black","hex":"#232228","preview":"levels/preview-sk_ms_card_d_unit_black.html"}],"livery":"akai"},"geof_unit":{"stats":{"hull":750,"boost armor":"lv 1","speed":"34 · boost 74","armament":"FINGER VULCANS · HEAT SWORD · HEAT ROD"},"portrait":"assets/sk_ms_head_geof_unit.png","preview":"levels/preview-sk_ms_card_geof_unit_blue.html","liveries":[{"id":"blue","hex":"#5b7fb2","preview":"levels/preview-sk_ms_card_geof_unit_blue.html"},{"id":"ground","hex":"#c2ab7d","preview":"levels/preview-sk_ms_card_geof_unit_ground.html"}],"livery":"blue"},"gframe_mk2_unit":{"stats":{"hull":1000,"shield":100,"boost armor":"lv 1","speed":"34 · boost 74","armament":"V78 BEAM RIFLE · BEAM SABER · HEAD VULCAN"},"portrait":"assets/sk_ms_head_gframe_mk2_unit.png","preview":"levels/preview-sk_ms_card_gframe_mk2_unit.html"}}},"duel_enemy":{"style":"count","fixed":1,"label":"the enemy","blurb":"Your opponent is drawn at random every sortie."},"ffa_rivals":{"style":"count","label":"enemy suits — how many","blurb":"The rival lineup is drawn at random every sortie."},"team_allies":{"style":"count","fixed":2,"label":"your wing (BLUE)","blurb":"2 wingmen, drawn at random every sortie."},"team_foes":{"style":"count","fixed":3,"label":"the enemy team (RED)","blurb":"3 enemies, drawn at random every sortie."},"watch_a":{"style":"hangar","label":"fighter A","cards":{"wa_unit":{"stats":{"hull":1000,"shield":100,"boost armor":"lv 1","speed":"34 · boost 74","armament":"LONG RIFLE · BEAM SABER · HYPER BAZOOKA · HEAD VULCAN"},"portrait":"assets/sk_ms_head_unit.png","preview":"levels/preview-sk_ms_card_unit_tricolor.html"},"wa_z_unit":{"stats":{"hull":700,"boost armor":"lv 1","speed":"34 · boost 74","armament":"MACHINE GUN · HEAT AXE · GRENADE · BAZOOKA"},"portrait":"assets/sk_ms_head_z_unit.png","preview":"levels/preview-sk_ms_card_z_unit_zeonic.html"},"wa_t_unit":{"stats":{"hull":800,"boost armor":"lv 1","speed":"34 · boost 74","armament":"GIANT BAZOOKA · HEAT SABER · TORSO BEAM"},"portrait":"assets/sk_ms_head_t_unit.png","preview":"levels/preview-sk_ms_card_t_unit_black.html"},"wa_taisa_unit":{"stats":{"hull":1000,"shield":100,"boost armor":"lv 1","speed":"34 · boost 74","armament":"BEAM RIFLE · DOUBLE SABER · WRIST GATLING"},"portrait":"assets/sk_ms_head_taisa_unit.png","preview":"levels/preview-sk_ms_card_taisa_unit_akai.html"},"wa_d_unit":{"stats":{"hull":800,"boost armor":"lv 1","speed":"34 · boost 74","armament":"ANGULAR BAZOOKA · BEAM SABER · DUAL PISTOLS · HEAD VULCAN"},"portrait":"assets/sk_ms_head_d_unit.png","preview":"levels/preview-sk_ms_card_d_unit_akai.html"},"wa_geof_unit":{"stats":{"hull":750,"boost armor":"lv 1","speed":"34 · boost 74","armament":"FINGER VULCANS · HEAT SWORD · HEAT ROD"},"portrait":"assets/sk_ms_head_geof_unit.png","preview":"levels/preview-sk_ms_card_geof_unit_blue.html"},"wa_gframe_mk2_unit":{"stats":{"hull":1000,"shield":100,"boost armor":"lv 1","speed":"34 · boost 74","armament":"V78 BEAM RIFLE · BEAM SABER · HEAD VULCAN"},"portrait":"assets/sk_ms_head_gframe_mk2_unit.png","preview":"levels/preview-sk_ms_card_gframe_mk2_unit.html"}}},"watch_b":{"style":"hangar","label":"fighter B","cards":{"wb_unit":{"stats":{"hull":1000,"shield":100,"boost armor":"lv 1","speed":"34 · boost 74","armament":"LONG RIFLE · BEAM SABER · HYPER BAZOOKA · HEAD VULCAN"},"portrait":"assets/sk_ms_head_unit.png","preview":"levels/preview-sk_ms_card_unit_tricolor.html"},"wb_z_unit":{"stats":{"hull":700,"boost armor":"lv 1","speed":"34 · boost 74","armament":"MACHINE GUN · HEAT AXE · GRENADE · BAZOOKA"},"portrait":"assets/sk_ms_head_z_unit.png","preview":"levels/preview-sk_ms_card_z_unit_zeonic.html"},"wb_t_unit":{"stats":{"hull":800,"boost armor":"lv 1","speed":"34 · boost 74","armament":"GIANT BAZOOKA · HEAT SABER · TORSO BEAM"},"portrait":"assets/sk_ms_head_t_unit.png","preview":"levels/preview-sk_ms_card_t_unit_black.html"},"wb_taisa_unit":{"stats":{"hull":1000,"shield":100,"boost armor":"lv 1","speed":"34 · boost 74","armament":"BEAM RIFLE · DOUBLE SABER · WRIST GATLING"},"portrait":"assets/sk_ms_head_taisa_unit.png","preview":"levels/preview-sk_ms_card_taisa_unit_akai.html"},"wb_d_unit":{"stats":{"hull":800,"boost armor":"lv 1","speed":"34 · boost 74","armament":"ANGULAR BAZOOKA · BEAM SABER · DUAL PISTOLS · HEAD VULCAN"},"portrait":"assets/sk_ms_head_d_unit.png","preview":"levels/preview-sk_ms_card_d_unit_akai.html"},"wb_geof_unit":{"stats":{"hull":750,"boost armor":"lv 1","speed":"34 · boost 74","armament":"FINGER VULCANS · HEAT SWORD · HEAT ROD"},"portrait":"assets/sk_ms_head_geof_unit.png","preview":"levels/preview-sk_ms_card_geof_unit_blue.html"},"wb_gframe_mk2_unit":{"stats":{"hull":1000,"shield":100,"boost armor":"lv 1","speed":"34 · boost 74","armament":"V78 BEAM RIFLE · BEAM SABER · HEAD VULCAN"},"portrait":"assets/sk_ms_head_gframe_mk2_unit.png","preview":"levels/preview-sk_ms_card_gframe_mk2_unit.html"}}},"watch_blue":{"style":"roster","label":"BLUE team — up to 3","blurb":"The default lineup fights if you leave a side unchecked."},"watch_red":{"style":"roster","label":"RED team — up to 3","blurb":"The default lineup fights if you leave a side unchecked."},"watch_cast":{"style":"roster","label":"the cast","blurb":"Uncheck a suit to bench it — everyone fights by default."}};   // resolved per-slice setup presentation (hangar/count) or null
 // the DIFFICULTY pick (manifest.difficulty): engine ai-tuning tiers named in the game's own
 // voice — rendered on the map step of piloted setups; the picked id rides params.difficulty.
@@ -648,7 +663,7 @@ try { const s = JSON.parse(localStorage.getItem(SET_KEY) || 'null'); if (s && ty
 function persistSettings() { try { localStorage.setItem(SET_KEY, JSON.stringify(settings)); } catch (e) {} }
 
 // ---- shell music: the menu track loops, the battle list rotates, world views are silent ----
-let screen = 'start';   // start | menu | levels | setup | world | level | score
+let screen = 'start';   // start | menu | levels | setup | world | level | score | about
 let musicOn = settings.musicOn, musicEl = null, battleIdx = 0, wantSrc = null;
 // battle music holds for 5s AFTER a match begins (operator, 2026-07-30): armed at the game-ready
 // handshake, cleared whenever we leave the level screen. During the delay the level plays on combat
@@ -711,6 +726,8 @@ function syncMusic() {
     if (battleReady && MUSIC.battle.length) playSrc(battleTrack(), MUSIC.battle.length === 1); else stopMusic();
     return;
   }
+  // the About screen plays the hangar's own theme (Hangar Vigil), exported to a static render
+  if (screen === 'about' && MUSIC.about) { playSrc(MUSIC.about, true); return; }
   if (MUSIC.menu) playSrc(MUSIC.menu, true); else stopMusic();
 }
 if (MUSIC && MUSIC.menu) prefetchTrack(MUSIC.menu);   // start the menu render at boot
@@ -1096,6 +1113,13 @@ function renderStart() {
   btn.textContent = 'start';
   btn.addEventListener('click', renderMenu);
   s.appendChild(btn);
+  // this game's own addition: the title screen offers Start / About (the About page and its
+  // Hangar Vigil track live in this file + assets, not in the substrate's shell generator)
+  const ab = document.createElement('button');
+  ab.className = 'start-about';
+  ab.textContent = 'About';
+  ab.addEventListener('click', () => renderAbout(renderStart));
+  s.appendChild(ab);
   main.appendChild(s);
 }
 
@@ -1198,6 +1222,44 @@ function renderWorldView(en, back) {
   showLoading('loading ' + en.title);
   frame.style.display = 'block';
   frame.src = en.src;
+}
+
+// the About page — this game's provenance, credits, and links. Opened from the title screen
+// (Start / About); no frame, no store wire; the shell plays the hangar's own theme
+// (MUSIC.about, "Hangar Vigil") under it instead of the menu loop.
+function renderAbout(back) {
+  session = null;
+  setScreen('about');
+  closeFrame();
+  main.innerHTML = '';
+  const s = document.createElement('div');
+  s.className = 'screen about';
+  const h = document.createElement('h2');
+  h.className = 'gametitle';
+  h.style.fontSize = '20px';
+  h.textContent = 'About';
+  s.appendChild(h);
+  const card = document.createElement('div');
+  card.className = 'card about-card';
+  card.innerHTML =
+      '<p><b>Mobile Suit Arena</b> is a browser mech game: three guided tutorial sorties, solo duels, team battles, free-for-alls, and an all-AI spectate mode across six maps — 45 levels in all, plus the hangar. The track playing now is <i>Hangar Vigil</i>, the hangar’s own theme.</p>'
+    + '<p>The whole game was made in conversation with coding agents, inside <b>mojulo</b> — a local workshop that keeps what an agent makes. The levels and the mobile suits themselves were generated from mojulo’s 3D primitives: seeded, deterministic geometry composed by Claude Code — no modeling software, no asset store. The music and sound effects are synthesized the same way, from seeded math — no samples, no recordings. The pixel art — the title card, the map stills, the suit portraits — was drawn by Codex.</p>'
+    + '<p>Every piece is a small deterministic <b>recipe</b>: the <code>recipe/</code> folder in this repository is the real source, and on any machine running mojulo the same recipes re-mint the same game. Every level had to prove itself completable before it could ship.</p>'
+    + '<div class="about-links">'
+    + '<a href="https://github.com/zombico/mobile-suit-arena" target="_blank" rel="noopener">Mobile Suit Arena — source &amp; recipes<span class="sub">github.com/zombico/mobile-suit-arena</span></a>'
+    + '<a href="https://github.com/zombico/mojulo" target="_blank" rel="noopener">mojulo — the workshop<span class="sub">github.com/zombico/mojulo · Apache-2.0</span></a>'
+    + '<a href="https://www.npmjs.com/package/mojulo" target="_blank" rel="noopener">mojulo on npm<span class="sub">npx mojulo init — needs Claude Code or Codex</span></a>'
+    + '<a href="https://mojulo.ai" target="_blank" rel="noopener">mojulo.ai<span class="sub">what else the workshop makes — worlds, music, bots, games</span></a>'
+    + '</div>'
+    + '<p class="about-foot">Made by <a href="https://github.com/zombico" target="_blank" rel="noopener">zombico</a> — more of this work at <a href="https://ombi.co" target="_blank" rel="noopener">ombi.co</a>.</p>'
+    + '<p class="about-foot">This is an unofficial, fan-made work. It is not endorsed by, sponsored by, or affiliated with any official rights holder. All rights to the original characters, trademarked names, and universes belong to their respective owners.</p>'
+    + '<p class="about-foot">Mobile Suit Arena · © 2026 <a href="https://github.com/zombico" target="_blank" rel="noopener">zombico</a> · game ref <code>sk_ms_arena</code> · 45 minted level worlds</p>';
+  s.appendChild(card);
+  const b = document.createElement('button');
+  b.textContent = 'back';
+  b.addEventListener('click', back || renderStart);
+  s.appendChild(b);
+  main.appendChild(s);
 }
 
 // the level list (+ store card). With a menu this lives behind the kind:'levels' entry;
